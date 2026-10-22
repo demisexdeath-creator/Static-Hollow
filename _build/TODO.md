@@ -48,10 +48,10 @@ To close one, open the page's source in `src/`, search for `TODO`, replace the b
 
 ## Home (`src/index.html`)
 - **The Dead Water**: Chapters five to eight are named in the mod's files ("Chapter Five - The Static", "Chapter Six: The Door at the End of the World", "Chapter Seven: The First Signal", "Chapter Eight - The Dead Water"). The names and boundaries of chapters one to four on this wiki come from the mod's acts and phases. Rename them here and in the sidebar if they have official names.
-- **At a glance**: Add the CurseForge links for the mod and for the Static Hollow - Dead Channel modpack.
+- **At a glance**: Add the Static Hollow - Dead Channel modpack's link once CurseForge approves it.
 
 ## Installation guide (`src/install.html`)
-- **Find the altar**: Add the CurseForge page links here: the mod itself, the Static Hollow - Dead Channel modpack, and the three resource pack projects (HD Models, Shader PBR, HD World).
+- **On CurseForge**: Add the Static Hollow - Dead Channel modpack's link once CurseForge approves it.
 - **The Static Hollow - Dead Channel modpack**: Say whether leaving Water Erosion and Cinematic Interactions out of Dead Channel is on purpose (the pack's own builds of them aren't CurseForge projects), or whether they'll be added.
 
 ## Gear for every chapter (`src/items/chapter-gear.html`)
