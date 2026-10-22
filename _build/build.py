@@ -34,6 +34,8 @@ SITE = "Static Hollow"
 # Where the site lives on its host. GitHub Pages serves it at demisexdeath-creator.github.io/Static-Hollow/,
 # and 404.html needs that to find its styles from any depth. With a custom domain, set this to "/".
 BASE_PATH = "/Static-Hollow/"
+# The site's public address: used for search engines (canonical links and sitemap.xml).
+SITE_URL = "https://demisexdeath-creator.github.io/Static-Hollow/"
 HOME_TITLE = "Static Hollow | Official Website"
 VERSION = "1.63.3"
 
@@ -348,10 +350,13 @@ TEMPLATE = """<!doctype html>
 <meta name="description" content="{desc}">
 <meta name="theme-color" content="#0e0a12">
 <meta property="og:type" content="website">
+<link rel="canonical" href="{canonical}">
 <meta property="og:site_name" content="Static Hollow">
+<meta property="og:url" content="{canonical}">
 <meta property="og:title" content="{doc_title}">
 <meta property="og:description" content="{desc}">
-<meta property="og:image" content="{root}assets/img/scene.jpg">
+<meta property="og:image" content="{site_url}assets/img/cover.jpg">
+<meta name="twitter:card" content="summary">
 <link rel="icon" href="{root}assets/img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="{root}assets/css/fonts.css">
 <link rel="stylesheet" href="{root}assets/css/style.css">
@@ -468,6 +473,8 @@ def build():
             toc=toc,
             prevnext=render_prevnext(meta),
             version=VERSION,
+            canonical=SITE_URL + ("" if path == "index.html" else path),
+            site_url=SITE_URL,
             drafts_note=('\n  <p>Draft build: anything marked <span class="todo-inline todo-inline--key">TODO</span> hasn\'t been confirmed yet. '
                          '<a href="{root}todo.html">See the full list</a>.</p>') if DRAFTS else "",
         )
@@ -533,6 +540,13 @@ def build():
         dest = os.path.join(OUT, path)
         os.makedirs(os.path.dirname(dest), exist_ok=True)
         open(dest, "w", encoding="utf-8").write(out)
+
+    # sitemap.xml, so search engines find every page
+    urls = [SITE_URL + ("" if p == "index.html" else p) for p in sorted(rendered) if p not in ("404.html", "todo.html")]
+    sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    sm += [f"  <url><loc>{html.escape(u)}</loc></url>" for u in urls]
+    sm.append("</urlset>")
+    open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write("\n".join(sm) + "\n")
 
     js = "window.SH_INDEX=" + json.dumps(index, ensure_ascii=False, separators=(",", ":")) + ";\n"
     open(os.path.join(OUT, "assets/js/search-index.js"), "w", encoding="utf-8").write(js)
