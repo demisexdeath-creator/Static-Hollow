@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en" data-root="">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Installation guide | Static Hollow</title>
+<meta name="description" content="How to install Static Hollow 1.63.3 and its modpacks for Minecraft 26.3 on Fabric or Forge, including the Static Hollow - Dead Channel modpack; play with friends on a server, LAN or Essential; and set up shaders and the HD packs.">
+<meta name="theme-color" content="#0e0a12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Static Hollow">
+<meta property="og:title" content="Installation guide | Static Hollow">
+<meta property="og:description" content="How to install Static Hollow 1.63.3 and its modpacks for Minecraft 26.3 on Fabric or Forge, including the Static Hollow - Dead Channel modpack; play with friends on a server, LAN or Essential; and set up shaders and the HD packs.">
+<meta property="og:image" content="assets/img/scene.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/search-index.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+</head>
+<body class="sec-misc">
+<a class="skip" href="#content">Skip to the article</a>
+<div class="grain" aria-hidden="true"></div>
+<header class="topbar">
+  <button class="navtoggle" type="button" aria-controls="sidebar" aria-expanded="false">
+    <span class="navtoggle__bars" aria-hidden="true"></span><span class="vh">Menu</span>
+  </button>
+  <a class="brand" href="index.html">
+    <span class="brand__eyes" aria-hidden="true"><i></i><i></i></span>
+    <span class="brand__name">Static Hollow</span>
+    <span class="brand__sub">official wiki</span>
+  </a>
+  <div class="search" role="search">
+    <label class="vh" for="q">Search the wiki</label>
+    <input id="q" class="search__input" type="search" placeholder="Search creatures, places, items" autocomplete="off" spellcheck="false"
+      role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="results">
+    <kbd class="search__key" aria-hidden="true">/</kbd>
+    <ul id="results" class="results" role="listbox" aria-label="Search results" hidden></ul>
+  </div>
+</header>
+<div class="layout">
+<nav id="sidebar" class="sidebar" aria-label="Wiki sections"><div class="sidebar__inner">
+<div class="nav-group"><p class="nav-group__title">Archive</p><ul>
+<li><a href="index.html"><span>Home</span></a></li>
+<li><a href="install.html" aria-current="page"><span>Installation guide</span></a></li>
+<li><a href="faq.html"><span>FAQ</span></a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-group__title">Story</p><ul>
+<li><a href="story/index.html"><span>Story overview</span></a></li>
+<li class="ch1"><a href="story/chapter-1.html"><span class="chip-num">1</span><span>The Nine</span></a></li>
+<li class="ch2"><a href="story/chapter-2.html"><span class="chip-num">2</span><span>The Breach</span></a></li>
+<li class="ch3"><a href="story/chapter-3.html"><span class="chip-num">3</span><span>The Glasshouse</span></a></li>
+<li class="ch4"><a href="story/chapter-4.html"><span class="chip-num">4</span><span>The Flesh</span></a></li>
+<li class="ch5"><a href="story/chapter-5.html"><span class="chip-num">5</span><span>The Static</span></a></li>
+<li class="ch6"><a href="story/chapter-6.html"><span class="chip-num">6</span><span>The Door at the End of the World</span></a></li>
+<li class="ch7"><a href="story/chapter-7.html"><span class="chip-num">7</span><span>The First Signal</span></a></li>
+<li class="ch8"><a href="story/chapter-8.html"><span class="chip-num">8</span><span>The Dead Water</span></a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-group__title">Entities &amp; bosses</p><ul>
+<li><a href="entities/index.html"><span>Bestiary (everything)</span></a></li>
+<li class="ch1"><a href="entities/the-watcher.html"><span class="nav-dot" aria-hidden="true"></span><span>The Watcher</span></a></li>
+<li class="ch1"><a href="entities/hollow-saint.html"><span class="nav-dot" aria-hidden="true"></span><span>The Hollow Saint</span></a></li>
+<li class="ch2"><a href="entities/the-mended.html"><span class="nav-dot" aria-hidden="true"></span><span>The Mended</span></a></li>
+<li class="ch3"><a href="entities/the-gardener.html"><span class="nav-dot" aria-hidden="true"></span><span>The Gardener</span></a></li>
+<li class="ch3"><a href="entities/the-bloom.html"><span class="nav-dot" aria-hidden="true"></span><span>The Bloom</span></a></li>
+<li class="ch3"><a href="entities/giant-tentacles.html"><span class="nav-dot" aria-hidden="true"></span><span>The giant tentacles</span></a></li>
+<li class="ch4"><a href="entities/gardener-reborn.html"><span class="nav-dot" aria-hidden="true"></span><span>The Gardener, Reborn (Again)</span></a></li>
+<li class="ch4"><a href="entities/warden-of-shelter-no-4.html"><span class="nav-dot" aria-hidden="true"></span><span>The Warden of Shelter No. 4</span></a></li>
+<li class="ch4"><a href="entities/the-parasite.html"><span class="nav-dot" aria-hidden="true"></span><span>The Parasite</span></a></li>
+<li class="ch4"><a href="entities/the-omni.html"><span class="nav-dot" aria-hidden="true"></span><span>The Omni</span></a></li>
+<li class="ch5"><a href="entities/the-amalgam.html"><span class="nav-dot" aria-hidden="true"></span><span>The Amalgam</span></a></li>
+<li class="ch5"><a href="entities/the-carrier.html"><span class="nav-dot" aria-hidden="true"></span><span>The Carrier</span></a></li>
+<li class="ch5"><a href="entities/the-turned.html"><span class="nav-dot" aria-hidden="true"></span><span>The turned (the outbreak)</span></a></li>
+<li class="ch5"><a href="entities/the-chorus.html"><span class="nav-dot" aria-hidden="true"></span><span>The Chorus</span></a></li>
+<li class="ch5"><a href="entities/the-deaf-king.html"><span class="nav-dot" aria-hidden="true"></span><span>The Deaf King</span></a></li>
+<li class="ch6"><a href="entities/the-crowd.html"><span class="nav-dot" aria-hidden="true"></span><span>The Crowd</span></a></li>
+<li class="ch6"><a href="entities/the-projectionist.html"><span class="nav-dot" aria-hidden="true"></span><span>The Projectionist</span></a></li>
+<li class="ch6"><a href="entities/the-viewer.html"><span class="nav-dot" aria-hidden="true"></span><span>The Viewer</span></a></li>
+<li class="ch7"><a href="entities/the-first-signal.html"><span class="nav-dot" aria-hidden="true"></span><span>The First Signal</span></a></li>
+<li class="ch8"><a href="entities/the-undertow.html"><span class="nav-dot" aria-hidden="true"></span><span>The Undertow</span></a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-group__title">Locations &amp; structures</p><ul>
+<li><a href="places/index.html"><span>Every location</span></a></li>
+<li class="ch1"><a href="places/cathedral.html"><span class="nav-dot" aria-hidden="true"></span><span>The church that isn&#x27;t on any map</span></a></li>
+<li class="ch3"><a href="places/the-bloom-realm.html"><span class="nav-dot" aria-hidden="true"></span><span>The teeth pit and floating islands</span></a></li>
+<li class="ch4"><a href="places/the-flesh.html"><span class="nav-dot" aria-hidden="true"></span><span>The red fog</span></a></li>
+<li class="ch5"><a href="places/relay-6.html"><span class="nav-dot" aria-hidden="true"></span><span>The relay and the live banks</span></a></li>
+<li class="ch5"><a href="places/starlite-drive-in.html"><span class="nav-dot" aria-hidden="true"></span><span>The Starlite Drive-In</span></a></li>
+<li class="ch5"><a href="places/null-static-zone.html"><span class="nav-dot" aria-hidden="true"></span><span>The Null Static Zone</span></a></li>
+<li class="ch5"><a href="places/the-hive.html"><span class="nav-dot" aria-hidden="true"></span><span>The Hive</span></a></li>
+<li class="ch5"><a href="places/the-deep.html"><span class="nav-dot" aria-hidden="true"></span><span>The Sinkhole and the Deep</span></a></li>
+<li class="ch6"><a href="places/the-stalls.html"><span class="nav-dot" aria-hidden="true"></span><span>The Door and the Stalls</span></a></li>
+<li class="ch6"><a href="places/the-watchers-vault.html"><span class="nav-dot" aria-hidden="true"></span><span>The Watcher&#x27;s Vault</span></a></li>
+<li class="ch6"><a href="places/the-other-side.html"><span class="nav-dot" aria-hidden="true"></span><span>The Other Side</span></a></li>
+<li class="ch7"><a href="places/the-hub.html"><span class="nav-dot" aria-hidden="true"></span><span>The Hub</span></a></li>
+<li class="ch8"><a href="places/the-dead-water.html"><span class="nav-dot" aria-hidden="true"></span><span>The Dead Water</span></a></li>
+<li><a href="places/the-hollows-country.html"><span>The Hollow&#x27;s own country</span></a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-group__title">Items &amp; blocks</p><ul>
+<li><a href="items/index.html"><span>Every item and block</span></a></li>
+<li><a href="items/chapter-gear.html"><span>Gear for every chapter</span></a></li>
+<li><a href="items/index.html#relay-core"><span>Relay Core</span></a></li>
+<li><a href="items/index.html#compasses"><span>Compasses and needles</span></a></li>
+<li><a href="items/index.html#power-source"><span>Power source parts</span></a></li>
+<li><a href="items/index.html#parasite-egg"><span>Parasite egg (pod)</span></a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-group__title">Lore</p><ul>
+<li><a href="lore/index.html"><span>Notes and books</span></a></li>
+<li><a href="lore/tapes-and-broadcasts.html"><span>Tapes and broadcasts</span></a></li>
+<li><a href="lore/the-watcher-speaks.html"><span>The Watcher speaks</span></a></li>
+</ul></div>
+<div class="nav-group"><p class="nav-group__title">Records</p><ul>
+<li><a href="advancements.html"><span>Advancements</span></a></li>
+<li><a href="music.html"><span>The soundtrack</span></a></li>
+<li><a href="survival.html"><span>Cold, thirst and the world</span></a></li>
+<li><a href="credits.html"><span>Credits</span></a></li>
+</ul></div>
+<p class="sidebar__ver">Written for Static Hollow 1.63.3</p>
+</div></nav>
+<div class="scrim" hidden></div>
+<main id="content" class="main" tabindex="-1">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="crumbs__sep" aria-hidden="true">/</span><span aria-current="page">Installation guide</span></nav>
+<header class="titlecard">
+<h1 data-text="Installation Guide">Installation Guide</h1>
+<p class="titlecard__sub">make a new world</p>
+</header>
+<details class="toc-m"><summary>On this page</summary><ol><li><a href="#quick-start">Quick start</a></li><li><a href="#dead-channel">The Static Hollow - Dead Channel modpack</a></li><li><a href="#fabric-or-forge">Fabric or Forge?</a></li><li><a href="#multiplayer">Playing with friends</a></li><li><a href="#shaders">Shaders</a></li><li><a href="#hd-packs">The HD packs</a></li><li><a href="#performance">If it runs slowly</a></li><li><a href="#building-it-yourself">Building it yourself</a></li><li><a href="#testing-commands">Testing commands</a></li></ol></details>
+<div class="article-wrap has-toc">
+<article class="article">
+<p class="lede">Static Hollow 1.63.3 is for <strong>Minecraft 26.3</strong> and comes in two builds that play the same: <strong>Fabric</strong> (made for shaders, with guns) and <strong>Forge</strong>. The easiest way in is a CurseForge modpack. Whatever you do, start a new world, and give the game 8 GB of memory.</p>
+
+<h2 id="quick-start">Quick start</h2>
+<ol class="seq">
+  <li><h3 id="install-the-curseforge-app">Install the CurseForge app</h3><p>From curseforge.com, and sign in.</p></li>
+  <li><h3 id="install-the-modpack">Install the modpack</h3><p>Search for <strong>Static Hollow - Dead Channel</strong> in the app and click Install (see <a href="#dead-channel">the Dead Channel modpack</a>). If you have a modpack as a .zip instead, import it under My Modpacks.</p></li>
+  <li><h3 id="give-it-8-gb-of-memory">Give it 8 GB of memory</h3><p>The modpacks ask CurseForge for 8 GB since 1.63.2. If yours doesn't have it: the modpack's <strong>...</strong> menu, Profile Options, Allocated Memory. Running short is what causes the stutters.</p></li>
+  <li><h3 id="play">Play</h3><p>Launch it from the app. The Fabric packs come with Iris, Sodium and the Photon shader pack already switched on and set up for Static Hollow.</p></li>
+  <li><h3 id="make-a-new-world">Make a new world</h3><p>The grey sky, murky water and dark clouds are part of world data, so worlds made with older versions keep their old sky. The oceans two thousand blocks deep and <a href="places/the-hollows-country.html">the Hollow's own country</a> (1.62.0) also only come in new worlds; everything else comes to old worlds too.</p></li>
+  <li><h3 id="find-the-altar">Find the altar</h3><p>500 to 1000 blocks from spawn. Follow the blue smoke.</p></li>
+</ol>
+
+<h2 id="dead-channel">The Static Hollow - Dead Channel modpack</h2>
+<figure class="figure figure--side">
+  <img src="assets/img/dead-channel-logo.jpg" alt="The Static Hollow - Dead Channel modpack logo" width="400" height="400" loading="lazy">
+</figure>
+<p><strong>Static Hollow - Dead Channel</strong> is the Fabric modpack as it goes up on CurseForge. Version 1.63.3 is for Fabric Loader 0.19.5 and asks for 8 GB. Instead of carrying the mod inside the pack, it downloads it from CurseForge along with the mod's three resource packs, each its own project:</p>
+<ul>
+  <li>Static Hollow 1.63.3 (Fabric)</li>
+  <li>Static Hollow: HD Models and Static Hollow: Shader PBR, both switched on</li>
+  <li>Static Hollow: HD World, installed but left off</li>
+  <li>and the same mods as the Fabric modpack below, except <a href="survival.html#erosion">Water Erosion</a> and <a href="survival.html#workstations-as-scenes">Cinematic Interactions</a>, which aren't on its list.</li>
+</ul>
+<p>It sets the same shader (the Static Hollow copy of Photon), the same resource pack order and a render distance of 12 with a simulation distance of 8.</p>
+
+<h2 id="fabric-or-forge">Fabric or Forge?</h2>
+<div class="tablewrap">
+<table class="data">
+  <thead><tr><th scope="col"></th><th scope="col">Fabric</th><th scope="col">Forge</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Loader</th><td>Fabric Loader 0.19.5, Fabric API 0.161.0+26.3</td><td>Forge 66.0.9</td></tr>
+    <tr><th scope="row">Mod file</th><td><code>statichollow-fabric-1.63.3.jar</code></td><td><code>statichollow-1.63.3.jar</code></td></tr>
+    <tr><th scope="row">Modpacks</th><td>Static Hollow - Dead Channel (on CurseForge); "Static Hollow (Fabric + Shaders)" when you build it yourself</td><td>"Static Hollow"</td></tr>
+    <tr><th scope="row">Shaders</th><td>Iris and Sodium with Photon, set up and switched on</td><td>Need Oculus, which only goes up to Minecraft 26.2 (as of October 2026)</td></tr>
+    <tr><th scope="row">The Mended guns</th><td>Yes, with TaCZ (in the modpack)</td><td>No</td></tr>
+    <tr><th scope="row">Streams: Reflowing</th><td>Yes</td><td>No</td></tr>
+    <tr><th scope="row">Puddles &amp; Floods, Water Erosion, Cinematic Interactions</th><td>Yes</td><td>Yes, as builds made for the pack (none of them has a Forge 26.3 build of its own)</td></tr>
+    <tr><th scope="row">Host online without a server</th><td>Yes, with the Essential mod</td><td>No (Essential is Fabric-only on 26.3); LAN works</td></tr>
+    <tr><th scope="row">Story</th><td colspan="2">The same in both.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Forge and Fabric players can't share a server. Pick one version for everyone.</p>
+
+<h3 id="whats-in-the-fabric-modpack">What's in the Fabric modpack</h3>
+<ul>
+  <li>Static Hollow 1.63.3 (Fabric)</li>
+  <li>Fabric API 0.161.0+26.3</li>
+  <li>Sodium 0.9.2 and Iris Shaders 1.11.7</li>
+  <li>Lithium 0.26.2 (faster game logic)</li>
+  <li>Entity Culling 1.11.2 (skips drawing creatures hidden behind walls)</li>
+  <li>Photon v1.3b, Hysteria v1.2.2 and Insanity v1.650 (shader packs, downloaded unmodified)</li>
+  <li>Timeless and Classics Guns: Zero (TaCZ) [Unofficial] Refabricated 1.1.8 for 26.3, and Forge Config API Port 26.3.1, which it needs</li>
+  <li>First-person Model 2.7.3 and Not Enough Animations 1.12.6 (your own body in first person)</li>
+  <li>Sound Physics Remastered 1.5.1, installed but switched off: since 1.61.1 the mod does every sound's echo and muffling itself (<a href="survival.html#every-sound-where-it-is">how to switch it back</a>)</li>
+  <li>Biomes O' Plenty 26.3.0.0.15 (beta), with TerraBlender 26.3.0.0.9 and GlitchCore 26.3.0.0.5. The Hollow's own biomes come into the world through TerraBlender.</li>
+  <li>Serene Seasons 26.1.2.0.7 for 26.3 (beta), with Static Hollow's season settings</li>
+  <li>Puddles &amp; Floods 1.1.6</li>
+  <li>Water Erosion, ported to 26.3 for this pack</li>
+  <li>Streams: Reflowing 2.15.2</li>
+  <li>Cinematic Interactions 0.18.7, in a build made for this pack</li>
+</ul>
+
+<h3 id="whats-in-the-forge-modpack">What's in the Forge modpack</h3>
+<ul>
+  <li>Static Hollow 1.63.3</li>
+  <li>Sound Physics Remastered, installed but switched off, as on Fabric</li>
+  <li>Biomes O' Plenty, TerraBlender and GlitchCore</li>
+  <li>Serene Seasons</li>
+  <li>Puddles &amp; Floods 1.1.6, ported to Forge 26.3 for this pack</li>
+  <li>Water Erosion, ported to 26.3 for this pack</li>
+  <li>Cinematic Interactions 0.18.7, built for Forge from its Fabric source over a small layer that answers its Fabric calls with Forge's. If one of its changes clashes with Forge's own, that part is skipped rather than the game failing.</li>
+</ul>
+<p>What the new mods do in the game is on <a href="survival.html">cold, thirst and the world</a>.</p>
+
+<h2 id="multiplayer">Playing with friends</h2>
+<h3 id="dedicated-server">On a server</h3>
+<p>Everyone joining uses the matching modpack. The world's land, seasons, puddles and streams are the server's, so those mods go on the server too.</p>
+<ul>
+  <li><strong>Fabric:</strong> install the Fabric server for Minecraft 26.3 (Loader 0.19.5) and put these in its <code>mods</code> folder:
+    <ul>
+      <li><code>statichollow-fabric-1.63.3.jar</code> and Fabric API 0.161.0+26.3</li>
+      <li>for the guns, Timeless and Classics Guns: Zero 1.1.8 for 26.3 and Forge Config API Port 26.3.1</li>
+      <li>Puddles &amp; Floods 1.1.6</li>
+      <li>Biomes O' Plenty, TerraBlender, GlitchCore, Serene Seasons and Streams: Reflowing, from CurseForge</li>
+      <li><code>watererosion-26.3-sh.1-fabric.jar</code> and <code>cinematic-interactions-0.18.7+statichollow.1-fabric-26.3.jar</code> (in the project's output folder and the modpack's mods)</li>
+    </ul>
+  </li>
+  <li><strong>Forge:</strong> install the Forge 66.0.9 server for Minecraft 26.3 and put these in its <code>mods</code> folder:
+    <ul>
+      <li><code>statichollow-1.63.3.jar</code></li>
+      <li><code>puddleflood-1.1.6+26.3-forge.jar</code>, <code>watererosion-26.3-sh.1-forge.jar</code> and <code>cinematic-interactions-0.18.7+statichollow.1-forge-26.3.jar</code> (the last two are in the output folder; all three are in the modpack's mods)</li>
+      <li>Biomes O' Plenty, TerraBlender, GlitchCore and Serene Seasons, from CurseForge</li>
+    </ul>
+  </li>
+  <li>Iris, Sodium, Photon and Sound Physics Remastered are client-only: don't put them on the server.</li>
+</ul>
+<h3 id="lan-and-essential">Without a server</h3>
+<p>Open your world to LAN (<kbd>Esc</kbd>, then Open to LAN), or on Fabric host it over the internet with the Essential mod (on CurseForge for Fabric 26.3, client-only). Either way it plays exactly like a server: everyone needs the same version of Static Hollow (and TaCZ, for the guns). Since 1.43.6 everything the mod shows comes from the server, so a friend who joins your world sees what you see.</p>
+
+<h2 id="shaders">Shaders</h2>
+<p>The Fabric modpacks have Photon switched on already. With a shader pack, every glow in the mod (eyes, antenna bulbs, the Saint's Crown orb, runes, portals, beams) shines as a real light with bloom.</p>
+<ul>
+  <li><strong>Pick the Static Hollow copy.</strong> If Photon v1.3b, Insanity v1.650 or Hysteria v1.2.2 is in your shaderpacks folder, the mod makes a copy of each when the game starts with "-StaticHollow" on the end of its name. Choose that one: its grass and flowers sway as one piece, it knows the mod's garden blocks, and it draws the Void, the Bloom and the Hub properly. The copies are made on your computer for your own use; don't upload them anywhere. Photon is the one made to work with every part of the mod.</li>
+  <li><strong>The PBR pack.</strong> <code>StaticHollow-Shader-PBR.zip</code> is a resource pack of LabPBR normal and specular maps for every block: bumpy stone, glossy mud, metal that reflects, light pouring out of torches and lava. The Fabric modpacks switch it on. On Forge, turn it on in Options, Resource Packs, with a shader pack that uses LabPBR materials.</li>
+  <li><strong>Change the look</strong> in Options, Video Settings, Shader Packs, Shader Pack Settings. Too slow? Pick the Medium or Low profile there (the Static Hollow colours, fog and water stay), or lower the shadow resolution to 1024. <kbd>K</kbd> turns shaders off, and the mod's own grey sky and fog come back.</li>
+  <li><strong>Forge:</strong> shaders need Oculus, and as of October 2026 Oculus only goes up to Minecraft 26.2.</li>
+</ul>
+<figure class="figure figure--shot">
+  <img src="assets/img/shots/glowing-rift.jpg" alt="A glowing red figure between walls of stone lit pink from within, with shaders and the PBR pack on" width="1280" height="701" loading="lazy">
+  <figcaption><b>Glowing rift</b> With shaders and the Shader PBR pack on.</figcaption>
+</figure>
+
+<h2 id="hd-packs">The HD packs</h2>
+<p>Everything is already redrawn at four times normal resolution. Two optional resource packs go further, AI-upscaled to double resolution with Real-ESRGAN and then given their original grit back:</p>
+<ul>
+  <li><code>StaticHollow-HD-Models.zip</code>: every creature, their heads, the weapons, armour and items, the cathedral's blocks, the main menu and the effects.</li>
+  <li><code>StaticHollow-HD-World.zip</code>: every block and item of the look at 128&times;128, the paintings, the sun and the moon.</li>
+</ul>
+<p>Since 1.61.0 the HD pack has the chapter gear (the weapons, the tools and the seven armour sets, held and worn) at four times the mod's own resolution, and since 1.63.1 the Dead Water's blocks and plants at 256 px. Since 1.63.2 its item textures are capped at 512 px, which made the game start faster and stutter less.</p>
+<ul>
+  <li><strong>Fabric modpacks:</strong> HD-Models is switched on for you. HD-World is installed but left off, because the shader maps are drawn for the normal block size. To try it, go to Options, Resource Packs, move it to the right-hand side below Shader-PBR, and click Done. The modpack sets the pack order (vanilla, Static Hollow, HD-Models, Shader-PBR). In Dead Channel the three packs come as their own CurseForge projects.</li>
+  <li><strong>Forge:</strong> move both to the right-hand side in Options, Resource Packs. The order doesn't matter.</li>
+</ul>
+<p>They need more video memory: if the game stutters, turn HD-World off first. With shaders on, HD-World's blocks use the normal-size bump maps, stretched to fit.</p>
+
+<h2 id="performance">If it runs slowly</h2>
+<ul>
+  <li>Give the game <strong>8 GB of memory</strong> (the modpack's <strong>...</strong> menu, Profile Options, Allocated Memory).</li>
+  <li>With shaders, lower the shadow resolution to 1024, then the render distance to 10 (the pack sets 12), then turn HD-World off.</li>
+  <li>Lower <strong>Mipmap Levels</strong> in Video Settings.</li>
+  <li>Turn off <code>StaticHollow-HD-World.zip</code>, then HD-Models.</li>
+  <li>If new chunks are slow to appear on Fabric, pick a lower quality preset in Streams: Reflowing's settings (in the config folder).</li>
+  <li>If you switched Sound Physics Remastered back on, turn its rays and bounces down in <code>config/sound_physics_remastered/soundphysics.properties</code>.</li>
+  <li>Camera shake and zoom follow your <strong>Screen Effect Scale</strong> and <strong>FOV Effects</strong> settings. <strong>Hide Lightning Flashes</strong> (Accessibility) keeps the main menu's flashes dim.</li>
+</ul>
+
+<h2 id="building-it-yourself">Building it yourself</h2>
+<p>For the mod's own project folders:</p>
+<ol>
+  <li>Install Java 25 (Temurin, from adoptium.net).</li>
+  <li>On Windows double-click <code>BUILD-MODPACK.bat</code>; on Mac or Linux run <code>./build-modpack.sh</code>.</li>
+  <li>The <code>output</code> folder then holds the modpack zip (<code>StaticHollow-Fabric-Modpack-1.63.3.zip</code> or <code>StaticHollow-Modpack-1.63.3.zip</code>; import it in CurseForge under My Modpacks), the mod jar by itself (for servers), <code>StaticHollow-Visuals.zip</code> (the texture pack on its own), the HD packs if they were found, and the builds of Water Erosion and Cinematic Interactions made for the pack.</li>
+</ol>
+<p>The build starts a test server that loads a new world's data before it makes a modpack, so a version that can't start a world can't be built. If it fails, check <code>build-log.txt</code>.</p>
+
+<h2 id="testing-commands">Testing commands</h2>
+<p>With cheats on, the <strong>Static Hollow</strong> creative tab has every spawn egg, head and block, and <code>/statichollow</code> can skip to any part of the story. In Creative, hostile creatures can't hurt you, so test hunting in Survival. <code>/locate structure statichollow:...</code> finds the mod's places, and since 1.63.2 clicking the coordinates it gives you lands you standing beside the place (or on the sea's surface over a drowned one).</p>
+<div class="tablewrap">
+<table class="data">
+  <thead><tr><th scope="col">Command</th><th scope="col">What it does</th></tr></thead>
+  <tbody>
+    <tr><td><code>/statichollow locate [place]</code></td><td>Where each place is, or when it will come.</td></tr>
+    <tr><td><code>/statichollow underbed</code>, <code>underbed peek</code></td><td>The Underneath comes up under your bed next time you lie down; or watches from under the nearest bed.</td></tr>
+    <tr><td><code>/statichollow bloom open | break | rise | swallow</code></td><td>The green rift opens; the Binding breaks; the Great Bloom rises; it swallows you.</td></tr>
+    <tr><td><code>/statichollow flesh wake | front &lt;days&gt; | load &lt;0-100&gt; | redo | state</code></td><td>The Flesh erupts in front of you; its reach; your infection; and more.</td></tr>
+    <tr><td><code>/statichollow flesh city | lab | shelter [tp | below | vault | power | rebuild]</code></td><td>Rosemont, the Laboratory and Shelter No. 4.</td></tr>
+    <tr><td><code>/statichollow flesh device [build | release]</code></td><td>The Rosemont Device; the Bloom gives the Gardener back.</td></tr>
+    <tr><td><code>/statichollow flesh launch [force | open | mark | fire | detonate | reset]</code></td><td>The launch, step by step.</td></tr>
+    <tr><td><code>/statichollow flesh mutate | nest | horde [size] | horde stop | act | sapro &lt;0-3&gt; | self</code></td><td>Mutations, nests, hordes, the infected's own ways, Sapromyiophilous, the infected you.</td></tr>
+    <tr><td><code>/statichollow guns give mended_smg</code> (or <code>mended_shotgun</code>, <code>mended_marksman</code>)</td><td>The Mended guns (Fabric with TaCZ).</td></tr>
+    <tr><td><code>/statichollow ending &lt;test&gt;</code></td><td>Everything from the end of chapter four on. The command suggests them all; they're grouped below.</td></tr>
+  </tbody>
+</table>
+</div>
+<p>The tests for <code>/statichollow ending</code>, by part of the story:</p>
+<div class="tablewrap">
+<table class="data">
+  <thead><tr><th scope="col">Part</th><th scope="col">Tests</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Chapter four's end and chapter five</th><td><code>status</code>, <code>start</code>, <code>sites</code>, <code>parts</code>, <code>gun</code>, <code>strike</code>, <code>feed</code>, <code>starve</code>, <code>ritual</code>, <code>omni</code>, <code>reclaim</code>, <code>back</code>, <code>hounds</code>, <code>broodme</code>, <code>hollow</code>, <code>chapter5</code>, <code>relayhere</code>, <code>amalgam</code>, <code>relaycore</code>, <code>nullhere</code>, <code>afterimage</code>, <code>fragments</code>, <code>reel</code>, <code>lateshow</code>, <code>nullopen</code>, <code>nullzone</code>, <code>carrierhere</code>, <code>signoff</code>, <code>ruins</code>, <code>hushhere</code>, <code>stoneshere</code>, <code>choirhere</code> and their resets</td></tr>
+    <tr><th scope="row">The outbreak (1.48&ndash;1.52)</th><td><code>infest</code> (the nearest creature has one in it), <code>infest25</code> / <code>infest50</code> / <code>infest75</code> / <code>infest95</code> (that far along), <code>infestturn</code>, <code>infestall</code> (everything within 24 blocks turns), <code>infestinfo</code>, <code>infestcure</code>, <code>biomass</code></td></tr>
+    <tr><th scope="row">The Hive (1.50, 1.53)</th><td><code>hivehere</code> (the hive 52 blocks ahead of you), <code>hivespeak</code>, <code>hivemind</code>, <code>hivefight</code>, <code>hivenode</code>, <code>hivedown</code>, <code>hiveskip</code>, <code>hivereset</code>, <code>hive</code>, <code>hivehands</code>; <code>aftermathnow</code>, <code>aftermath</code>, <code>aftermathreset</code>, <code>endopen</code>, <code>endseal</code></td></tr>
+    <tr><th scope="row">The Deep (1.54)</th><td><code>deep</code>, <code>sinkholehere</code>, <code>deepdown</code>, <code>deepup</code>, <code>tremor</code>, <code>groundgives</code>, <code>blister</code>, <code>reach</code>, <code>holesheal</code>, <code>marrow</code>, <code>halls</code>, <code>nest</code>, <code>heart</code>, <code>listenerhere</code>, <code>kinghere</code></td></tr>
+    <tr><th scope="row">The Stalls (1.56)</th><td><code>stalls</code>, <code>unseal</code>, <code>reseal</code>, <code>doornow</code>, <code>stallsgo</code>, <code>stallshome</code>, <code>stallsbuild</code>, <code>house</code> (every seat filled again), <code>pour</code> (the house gets up), <code>crowdhere</code>, <code>crowdkill</code>, <code>crowdreset</code>, <code>frontrow</code>, <code>frontrowskip</code>, <code>audiencehere</code>, <code>usherhere</code>, <code>picture</code></td></tr>
+    <tr><th scope="row">The Vault (1.57)</th><td><code>vault</code>, <code>vaultopen</code>, <code>vaultgo</code>, <code>vaulthome</code>, <code>vaultbuild</code>, <code>vaulttuned</code>, <code>watchnow</code>, <code>watchskip</code>, <code>keepsopen</code>, <code>keepall</code>, <code>projcome</code>, <code>projhere</code>, <code>projkill</code>, <code>projreset</code>, <code>firstreel</code>, <code>firstreelskip</code>, <code>tunedhere</code>, <code>rerun0</code>&ndash;<code>rerun3</code>, <code>vaultdark</code>, <code>vaultlight</code>, <code>show0</code>&ndash;<code>show7</code></td></tr>
+    <tr><th scope="row">The Other Side (1.58)</th><td><code>other</code>, <code>otheropen</code>, <code>othergo</code>, <code>otherhome</code>, <code>otherbuild</code>, <code>curtainnow</code>, <code>curtainskip</code>, <code>viewerstart</code>, <code>viewerheart</code>, <code>viewercarrier</code>, <code>viewerhold</code>, <code>lastshowskip</code>, <code>otherreset</code>, <code>standinhere</code>, <code>seenme</code>, <code>otherdoor</code></td></tr>
+    <tr><th scope="row">The Hub (1.59)</th><td><code>hub</code>, <code>hubgo</code>, <code>hubhome</code>, <code>hubbuild</code>, <code>hubnow</code>, <code>hubskip</code>, <code>encore</code>, <code>landing</code>, <code>hubreset</code>, <code>remote</code>, <code>replay0</code>&ndash;<code>replay5</code>, <code>replays</code>, <code>replaykill</code></td></tr>
+    <tr><th scope="row">The Dead Water (1.62, 1.63)</th><td><code>realm</code>, <code>realmgo</code>, <code>rigbuild</code>, <code>rigprep</code>, <code>rigland</code>, <code>realmreset</code>, <code>realmstrand</code>, <code>realmfix</code>; in the Dead Water, <code>subgo</code> (to the submarine), <code>subbay</code> (the sub bay built again, a submarine in it), <code>sr_&lt;place&gt;</code> (one of its places set down on the sea floor under you; <code>searuins</code> lists them) and <code>undertow</code> (it comes up for you, close)</td></tr>
+    <tr><th scope="row">Cold and thirst (1.62)</th><td><code>vitals</code>, <code>vitalscold</code>, <code>vitalshot</code>, <code>vitalsdry</code>, <code>vitalsreset</code></td></tr>
+  </tbody>
+</table>
+</div>
+<p><strong>To reset the haunting</strong> for a world: close it and delete <code>statichollow.properties</code> in its save folder.</p>
+
+</article>
+<aside class="toc" aria-label="On this page"><p class="toc__title">On this page</p><ol><li><a href="#quick-start">Quick start</a></li><li><a href="#dead-channel">The Static Hollow - Dead Channel modpack</a></li><li><a href="#fabric-or-forge">Fabric or Forge?</a></li><li><a href="#multiplayer">Playing with friends</a></li><li><a href="#shaders">Shaders</a></li><li><a href="#hd-packs">The HD packs</a></li><li><a href="#performance">If it runs slowly</a></li><li><a href="#building-it-yourself">Building it yourself</a></li><li><a href="#testing-commands">Testing commands</a></li></ol></aside>
+</div>
+
+<footer class="sitefoot">
+  <p>The official website of <strong>Static Hollow</strong>, a creepypasta horror mod for Minecraft by Death. Written for version 1.63.3, Minecraft 26.3.</p>
+  <p>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
+</footer>
+</main>
+</div>
+</body>
+</html>
