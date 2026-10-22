@@ -11,6 +11,12 @@ file and source code.
 Open `index.html` in a browser. Everything works straight from the folder, including search
 and the fonts.
 
+## Where it lives
+
+The site is online at **https://demisexdeath-creator.github.io/Static-Hollow/**, published by GitHub Pages from the `main` branch of github.com/demisexdeath-creator/Static-Hollow. To update it, change the files in that repository (upload them on GitHub, or push with Git or GitHub Desktop); Pages rebuilds in about a minute.
+
+If you move it to your own domain, set `BASE_PATH` at the top of `_build/build.py` to `"/"` and build again, so the 404 page keeps working.
+
 ## Put it online with GitHub Pages (free)
 
 1. Create a new repository on GitHub (for example `static-hollow-wiki`).

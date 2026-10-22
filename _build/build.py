@@ -31,6 +31,9 @@ DRAFTS = "--drafts" in sys.argv[1:]
 OUT = os.path.abspath(ARGS[0]) if ARGS else os.path.dirname(HERE)
 
 SITE = "Static Hollow"
+# Where the site lives on its host. GitHub Pages serves it at demisexdeath-creator.github.io/Static-Hollow/,
+# and 404.html needs that to find its styles from any depth. With a custom domain, set this to "/".
+BASE_PATH = "/Static-Hollow/"
 HOME_TITLE = "Static Hollow | Official Website"
 VERSION = "1.63.3"
 
@@ -524,6 +527,8 @@ def build():
         md.append("")
     open(os.path.join(HERE, "TODO.md"), "w", encoding="utf-8").write("\n".join(md))
 
+    if BASE_PATH and "404.html" in rendered:
+        rendered["404.html"] = rendered["404.html"].replace("<head>", f'<head>\n<base href="{BASE_PATH}">', 1)
     for path, out in rendered.items():
         dest = os.path.join(OUT, path)
         os.makedirs(os.path.dirname(dest), exist_ok=True)
