@@ -37,7 +37,7 @@ BASE_PATH = "/Static-Hollow/"
 # The site's public address: used for search engines (canonical links and sitemap.xml).
 SITE_URL = "https://demisexdeath-creator.github.io/Static-Hollow/"
 HOME_TITLE = "Static Hollow | Official Website"
-VERSION = "1.63.3"
+VERSION = "1.72.3"
 
 CHAPTERS = {
     1: ("story/chapter-1.html", "The Nine"),
@@ -48,6 +48,8 @@ CHAPTERS = {
     6: ("story/chapter-6.html", "The Door at the End of the World"),
     7: ("story/chapter-7.html", "The First Signal"),
     8: ("story/chapter-8.html", "The Dead Water"),
+    9: ("story/chapter-9.html", "The Harbinger"),
+    10: ("story/chapter-10.html", "Stay Tuned"),
 }
 
 # (path, label, chapter-number-or-None)
@@ -58,7 +60,8 @@ NAV = [
         ("faq.html", "FAQ", None),
     ]),
     ("Story", [("story/index.html", "Story overview", None)]
-     + [(p, name, n) for n, (p, name) in CHAPTERS.items()]),
+     + [(p, name, n) for n, (p, name) in CHAPTERS.items()]
+     + [("story/the-last-broadcast.html", "The Last Broadcast", 10)]),
     ("Entities & bosses", [
         ("entities/index.html", "Bestiary (everything)", None),
         ("entities/the-watcher.html", "The Watcher", 1),
@@ -81,6 +84,9 @@ NAV = [
         ("entities/the-viewer.html", "The Viewer", 6),
         ("entities/the-first-signal.html", "The First Signal", 7),
         ("entities/the-undertow.html", "The Undertow", 8),
+        ("entities/the-harbinger.html", "The Harbinger", 9),
+        ("entities/his-creations.html", "His creations and servants", 10),
+        ("entities/tune-in-town-cast.html", "Tune-In Town's cast", 10),
     ]),
     ("Locations & structures", [
         ("places/index.html", "Every location", None),
@@ -97,6 +103,8 @@ NAV = [
         ("places/the-other-side.html", "The Other Side", 6),
         ("places/the-hub.html", "The Hub", 7),
         ("places/the-dead-water.html", "The Dead Water", 8),
+        ("places/his-kingdom.html", "His kingdom", 10),
+        ("places/tune-in-town.html", "Tune-In Town", 10),
         ("places/the-hollows-country.html", "The Hollow's own country", None),
     ]),
     ("Items & blocks", [
@@ -111,6 +119,7 @@ NAV = [
         ("lore/index.html", "Notes and books", None),
         ("lore/tapes-and-broadcasts.html", "Tapes and broadcasts", None),
         ("lore/the-watcher-speaks.html", "The Watcher speaks", None),
+        ("lore/the-first-signal-speaks.html", "The First Signal speaks", None),
     ]),
     ("Records", [
         ("advancements.html", "Advancements", None),
@@ -322,18 +331,31 @@ def render_toc(body):
     return rail, mobile
 
 
+# A story page that isn't a numbered chapter (The Last Broadcast) sits after the chapter it belongs to.
+AFTER_CHAPTER = {10: ("story/the-last-broadcast.html", "The Last Broadcast")}
+
+
 def render_prevnext(meta):
     ch = meta.get("chapter", "")
     if meta.get("section") != "story" or not ch.isdigit():
         return ""
     n = int(ch)
     cells = []
+    if meta.get("part_of"):
+        # e.g. The Last Broadcast: back to its chapter, then on to the bestiary
+        p, name = CHAPTERS[n]
+        cells.append(f'<a class="pn pn--prev ch{n}" href="{{root}}{p}"><span class="pn__dir">Back to chapter {n}</span><span class="pn__name">{name}</span></a>')
+        cells.append('<a class="pn pn--next" href="{root}entities/index.html"><span class="pn__dir">Then read</span><span class="pn__name">The bestiary</span></a>')
+        return '<nav class="prevnext" aria-label="Chapters">' + "".join(cells) + "</nav>"
     if n - 1 in CHAPTERS:
         p, name = CHAPTERS[n - 1]
         cells.append(f'<a class="pn pn--prev ch{n-1}" href="{{root}}{p}"><span class="pn__dir">Previous chapter</span><span class="pn__name">{name}</span></a>')
     else:
         cells.append('<a class="pn pn--prev" href="{root}story/index.html"><span class="pn__dir">Back to</span><span class="pn__name">Story overview</span></a>')
-    if n + 1 in CHAPTERS:
+    if n in AFTER_CHAPTER:
+        p, name = AFTER_CHAPTER[n]
+        cells.append(f'<a class="pn pn--next ch{n}" href="{{root}}{p}"><span class="pn__dir">Then</span><span class="pn__name">{name}</span></a>')
+    elif n + 1 in CHAPTERS:
         p, name = CHAPTERS[n + 1]
         cells.append(f'<a class="pn pn--next ch{n+1}" href="{{root}}{p}"><span class="pn__dir">Next chapter</span><span class="pn__name">{name}</span></a>')
     else:

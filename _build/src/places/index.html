@@ -3,19 +3,19 @@ title: Locations
 nav: Every location
 sub: each place rises the first time someone comes near it
 section: places
-desc: Every location and structure in Static Hollow, chapter by chapter: when it appears, how to find it, and what's there.
+desc: Every location and structure in Static Hollow, chapter by chapter: when it appears, how to find it, and what's there, from the Forsaken Altar to the Dead Water's places, his kingdom and Tune-In Town.
 -->
 <p class="lede">Static Hollow's places don't generate with the world the normal way. Most rise out of nothing the first time someone comes near: on flat open ground, trees and hills cleared out of the way, in old worlds too. Later places only exist once the story wakes them, and the Watcher hands everyone a needle that points there.</p>
 
 <h2 id="finding-places">Finding places</h2>
 <ul>
-  <li><strong>Needles.</strong> When a place wakes, the Watcher gives each player a Watcher's Needle, a compass that only ever points there. See <a href="{root}items/index.html#compasses">Compasses and needles</a>.</li>
-  <li><strong><code>/statichollow locate [place]</code></strong> tells you where each place is (how far, which way, and coordinates you can click to fill in a teleport), or when it will come if it isn't there yet. It knows gardens, mansion, breach_altar, cathedral, altar, rosemont, laboratory, shelter, nests, great_bloom, arena and stomach, and later uplink, capacitor_works, soul_well, ashford_plant, meridian_lab, blackwater_station, relay, drive_in and hive.</li>
-  <li><strong><code>/locate structure statichollow:&lt;id&gt;</code></strong> works for the structures listed below with their id, once they exist. Both need cheats on. Since 1.63.2, clicking the coordinates it gives you puts you standing beside the structure, not under the ground or high in the air.</li>
+  <li><strong>Needles.</strong> When a place wakes, the Watcher gives each player a Watcher's Needle, a compass that only ever points there. Since 1.72.3 you start with three: the first time you join a world the Altar Needle, the Cathedral Needle and the Gardens Needle go into your inventory (a world you've already played gives them to you the next time you join, once only). Since 1.63.4 the Altar, Mansion and Gardens compasses find their places from anywhere. See <a href="{root}items/index.html#compasses">Compasses and needles</a>.</li>
+  <li><strong><code>/statichollow locate [place]</code></strong> tells you where each place is (how far, which way, and coordinates you can click to fill in a teleport), or when it will come if it isn't there yet. It knows gardens, mansion, breach_altar, cathedral, altar, rosemont, laboratory, shelter, nests, great_bloom, arena and stomach, and later uplink, capacitor_works, soul_well, ashford_plant, meridian_lab, blackwater_station, relay, drive_in and hive, and since 1.66.7 tune_in_town and flyer_tv. Since 1.66.7 you can click any place it lists to go there, and <code>/statichollow goto [place]</code> does the same: it puts you on the ground there, with room to stand.</li>
+  <li><strong><code>/locate structure statichollow:&lt;id&gt;</code></strong> works for the structures listed below with their id, once they exist. Both need cheats on. Since 1.63.2, clicking the coordinates it gives you puts you standing beside the structure, not under the ground or high in the air. Since 1.63.4 it finds the Botanic Gardens, the Murder Mansion, the Breach Altar, the cathedral and the Forsaken Altar from anywhere (where the place stands, or will rise the first time you come near), not only within a hundred chunks. In the Dead Water it finds each of the sea's places from anywhere and sets you down in the water beside it.</li>
 </ul>
 
 <h2 id="dimensions">The realms</h2>
-<p>Besides the Overworld, the Nether and the End, the story takes you to nine places of its own, each a separate dimension. You can't sleep in any of them.</p>
+<p>Besides the Overworld, the Nether and the End, the story takes you to ten places of its own, each a separate dimension, and Tune-In Town's secret has one more. You can't sleep in any of them.</p>
 <div class="tablewrap">
 <table class="data">
   <thead><tr><th scope="col">Realm</th><th scope="col">Id</th><th scope="col">Chapter</th><th scope="col">Way in</th></tr></thead>
@@ -29,6 +29,8 @@ desc: Every location and structure in Static Hollow, chapter by chapter: when it
     <tr><td><a href="{root}places/the-other-side.html">The Other Side</a></td><td><code>statichollow:the_other_side</code></td><td class="num">6</td><td>The Door, once its static has gone black</td></tr>
     <tr><td><a href="{root}places/the-hub.html">The Hub</a></td><td><code>statichollow:the_hub</code></td><td class="num">7</td><td>After the credits; then the Remote</td></tr>
     <tr><td><a href="{root}places/the-dead-water.html">The Dead Water</a></td><td><code>statichollow:dead_water</code></td><td class="num">8</td><td>Off the Hub's edge, through his portal</td></tr>
+    <tr><td><a href="{root}places/his-kingdom.html">His kingdom</a></td><td><code>statichollow:the_kingdom</code></td><td class="num">10</td><td>The tear left where you broke one of his sites' Broadcast Cores</td></tr>
+    <tr><td><a href="{root}places/tune-in-town.html">Tune-In Town (Studio B)</a></td><td><code>statichollow:tune_in_town</code></td><td class="num">10</td><td>The STAFF ONLY door at the back of the old place (a secret)</td></tr>
   </tbody>
 </table>
 </div>
@@ -143,29 +145,54 @@ desc: Every location and structure in Static Hollow, chapter by chapter: when it
 <section class="ch8">
 <h2 id="chapter-eight">Chapter eight</h2>
 <h3 id="the-dead-water">The Dead Water and the rig</h3>
-<p><a href="{root}places/the-dead-water.html">A dead green sea that goes on forever</a>, the oil rig he built in it long ago, the sub bay and the submarine Orpheus, and twelve waters, each with its own place on the sea floor:</p>
+<p><a href="{root}places/the-dead-water.html">A dead green sea that goes on forever</a>, laid out as one sea since 1.63.5: the oil rig he built in it long ago in the middle of the Grey Shelf, the sub bay and the submarine Orpheus, a ring of five shallow waters round it, a ring of five deeper ones round that, and past about 3,000 blocks the void. Since 1.63.6 each water has one place of its own, rebuilt bigger, and since 1.63.7 most of them have their own crews:</p>
 <div class="tablewrap">
 <table class="data">
   <thead><tr><th scope="col">Water</th><th scope="col">Its place</th><th scope="col">Id</th></tr></thead>
   <tbody>
-    <tr><td>The Grey Shelf</td><td>Sunk lifeboats</td><td><code>statichollow:sea_lifeboats</code></td></tr>
-    <tr><td>The Haemal Reach</td><td>The Drowned Heart</td><td><code>statichollow:sea_drowned_heart</code></td></tr>
-    <tr><td>The Wireweed</td><td>A fallen radio tower</td><td><code>statichollow:sea_radio_tower</code></td></tr>
-    <tr><td>The Lantern Fields</td><td>A flooded habitat dome</td><td><code>statichollow:sea_habitat_dome</code></td></tr>
-    <tr><td>The Ossuary Flats</td><td>A whalefall</td><td><code>statichollow:sea_whalefall</code></td></tr>
+    <tr><td>The Grey Shelf</td><td>The Lifeboat Graveyard</td><td><code>statichollow:sea_lifeboats</code></td></tr>
+    <tr><td rowspan="2">The Haemal Reach</td><td>The Drowned Heart</td><td><code>statichollow:sea_drowned_heart</code></td></tr>
+    <tr><td>Haemal Research Station</td><td><code>statichollow:sea_enzyme_lab</code></td></tr>
+    <tr><td>The Wireweed</td><td>The Wireweed Mast</td><td><code>statichollow:sea_radio_tower</code></td></tr>
+    <tr><td>The Lantern Fields</td><td>Lantern Station</td><td><code>statichollow:sea_habitat_dome</code></td></tr>
+    <tr><td>The Ossuary Flats</td><td>The Leviathan Fall</td><td><code>statichollow:sea_whalefall</code></td></tr>
     <tr><td>The Brine Sink</td><td>Sink Station</td><td><code>statichollow:sea_sink_station</code></td></tr>
     <tr><td>The Molar Reef</td><td>The Jaw</td><td><code>statichollow:sea_the_jaw</code></td></tr>
-    <tr><td>The Drowned Mycelia</td><td>Giant drowned mushrooms</td><td><code>statichollow:sea_drowned_mushrooms</code></td></tr>
-    <tr><td>The Rime Shelf</td><td>A frozen outpost; the rime spires</td><td><code>statichollow:sea_frozen_outpost</code>, <code>statichollow:sea_rime_spire</code></td></tr>
-    <tr><td>The Ember Vents</td><td>A pump ruin</td><td><code>statichollow:sea_pump_ruin</code></td></tr>
-    <tr><td>The Carrier Wave</td><td>A wreck field</td><td><code>statichollow:sea_wreck_field</code></td></tr>
-    <tr><td>The Black Below</td><td>The Anchor</td><td><code>statichollow:sea_the_anchor</code></td></tr>
+    <tr><td>The Drowned Mycelia</td><td>The Drowned Grove (and the Grove Heart under it)</td><td><code>statichollow:sea_drowned_mushrooms</code></td></tr>
+    <tr><td rowspan="2">The Rime Shelf</td><td>The Rime Outpost</td><td><code>statichollow:sea_frozen_outpost</code></td></tr>
+    <tr><td>The Rime Spires</td><td><code>statichollow:sea_rime_spire</code></td></tr>
+    <tr><td>The Ember Vents</td><td>Ember Pumping Station</td><td><code>statichollow:sea_pump_ruin</code></td></tr>
+    <tr><td>The Carrier Wave</td><td>The Wreck Field</td><td><code>statichollow:sea_wreck_field</code></td></tr>
+    <tr><td>The Black Below</td><td>The Canticle's Anchor</td><td><code>statichollow:sea_the_anchor</code></td></tr>
   </tbody>
 </table>
 </div>
+<p class="small muted">Where each one lies from the rig is on <a href="{root}places/the-dead-water.html#the-map">the Dead Water's page</a>. The ids are the old ones, kept.</p>
+</section>
+
+<section class="ch9">
+<h2 id="chapter-nine">Chapter nine</h2>
+<h3 id="the-dead-water-after-the-turning">The Dead Water, after the Turning</h3>
+<p>No new place: the Undertow goes through the Dead Water's two hearts and comes back to lie in the sea north-east of the rig for three days, until the Harbinger rises out of it and tears its way out. See <a href="{root}places/the-dead-water.html#after-the-turning">the Dead Water</a> and <a href="{root}story/chapter-9.html">Chapter Nine</a>.</p>
+</section>
+
+<section class="ch10">
+<h2 id="chapter-ten">Chapter ten</h2>
+<h3 id="his-sites">His sites</h3>
+<p>After the Broadcast his sites come through into your world, each kept by one of his three servants and each with a <strong>Broadcast Core</strong>: break it and the site goes off the air, and its chests hold the best of what he brought. A keeper you've killed doesn't come back. See <a href="{root}story/chapter-10.html">Chapter Ten</a>.</p>
+<ul>
+  <li><strong>The Transmitter</strong> rises up out of the ground every ten-odd minutes, a long way off, its mast's red lamps on the skyline at night; the first one comes up right in front of you the first time you step out of doors by day. His creations come out of it at night. The Announcer keeps it.</li>
+  <li><strong>The Burrow</strong> is eaten out of the rock near you in the caves (the first the first time you're down in one): Hangers on its roof, blackout ore in its walls, lockers in it, and a tunnel from it to where you were. The Cameraman keeps it.</li>
+  <li><strong>The Set</strong> goes up at night out in the open: the front of a house and nothing behind it, studio lights, a camera (its core is the camera's eye), Lookalikes standing about being people. Since 1.72.2 the first one goes up in front of you on the third night. The Stagehand keeps it.</li>
+</ul>
+<h3 id="his-kingdom">His kingdom</h3>
+<p><a href="{root}places/his-kingdom.html">A still black sea made of his static</a>, his castle on it, the windows into every realm under it, and the tear you come in by from one of his broken sites. His arena comes up out of its sea in the Last Broadcast and is torn up into the End.</p>
+<h3 id="tune-in-town">Tune-In Town Pizza &amp; Playhouse</h3>
+<p><a href="{root}places/tune-in-town.html">A secret night shift</a> (flashing lights and jumpscares: read the warning first). The HELP WANTED flyer on an Old Set leads you to the old place in your world, and its STAFF ONLY door to Studio B. The flyer can come any time after your first day.</p>
+<p class="small"><code>statichollow:tune_in_town</code> (the old place), <code>statichollow:flyer_tv</code> (the set showing the flyer), or <code>/statichollow locate tune_in_town</code> and <code>flyer_tv</code></p>
 </section>
 
 <section>
 <h2 id="the-hollows-own-country">The Hollow's own country</h2>
-<p><a href="{root}places/the-hollows-country.html">Five biomes of its own</a> in the Overworld since 1.62.0 (the Hollow Moor, the Blightwood, the Weeping Fen, the Antler Woods and the Signal Flats), and oceans that go down about 2,000 blocks, in three depths: the Sunless Drop, the Hadal Dark and the Trench. New worlds only.</p>
+<p><a href="{root}places/the-hollows-country.html">Biomes of its own</a>: five in the Overworld since 1.62.0 (the Hollow Moor, the Blightwood, the Weeping Fen, the Antler Woods and the Signal Flats), and since 1.66.0 to 1.66.3 thirteen more on the Overworld's surface, three under the ground, four in the Nether and three in the End. Since 1.66.7 they come in whole stretches of the world, not strips. New ground only: land you've already explored keeps what it has. And in worlds made since 1.62.0, oceans that go down about 2,000 blocks, in three depths: the Sunless Drop, the Hadal Dark and the Trench.</p>
 </section>

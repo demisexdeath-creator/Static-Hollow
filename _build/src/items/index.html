@@ -3,10 +3,10 @@ title: Items and Blocks
 nav: Items and blocks
 sub: every recipe shows up in the recipe book once you pick up what it's made from
 section: items
-desc: Static Hollow's items and blocks: the Relay Core, compasses and the Watcher's Needles, the power source parts, the reactor's parts, the parasite pod, the Chorus Fragment and the Last Voice, the Last Ticket and what the Watcher kept, the Remote, the Harpoon Gun and the Watcher's chart, the canteen, weapons, armour, recipes and blocks.
+desc: Static Hollow's items and blocks: the Relay Core, compasses and the Watcher's Needles (the Cathedral Needle too), the power source parts, the reactor's parts, the parasite pod, the Chorus Fragment and the Last Voice, the Last Ticket and what the Watcher kept, the Remote and the Remote (Mutated), the Harpoon Gun and the Watcher's chart, ORPHEUS's modules, the UV kit and everything made in the Dead Water's waters, the Static Heart, the Steel Locker and Blackout, Tune-In Town's prizes, the canteen, weapons, armour, recipes and blocks.
 -->
 <p class="lede">Item text on this page is copied from the mod as it appears in game: the name, the power line in red, and the description in grey. Icons are the mod's own textures. Every recipe unlocks in the recipe book as soon as you pick up what it's made from.</p>
-<div class="callout"><p class="callout__title">Gear for every chapter</p><p>Since 1.60.0 each chapter has its own armour set, two weapons and four tools. They have <a href="{root}items/chapter-gear.html">a page of their own</a>, with every recipe.</p></div>
+<div class="callout"><p class="callout__title">Gear for every chapter</p><p>Since 1.60.0 each chapter has its own armour set, two weapons and four tools. They have <a href="{root}items/chapter-gear.html">a page of their own</a>, with every recipe. So do the Dead Water's two dive suits and Chapter Ten's Blackout gear.</p></div>
 
 <h2 id="relay-core">The Relay Core</h2>
 <div class="item">
@@ -65,12 +65,17 @@ desc: Static Hollow's items and blocks: the Relay Core, compasses and the Watche
 </table>
 </div>
 <p class="small muted">Every needle's power line reads "Points to one of the places that woke".</p>
-<h3 id="site-needles">The Altar, Mansion and Gardens Needles</h3>
-<p>Since 1.63.2, three compasses you can make for the places you go back to. Use one and its needle swings round and settles on the nearest of its place ("The needle settles on the Forsaken Altar - 412 blocks north-east", for example); after that it points there wherever you go in the Overworld, until you use it again. With none anywhere near: "The needle spins and spins. There's none anywhere near." Anywhere but the Overworld: "The needle won't settle. What it's looking for is up in the Overworld." Their shared power line: <span class="mc-tip__power">Use it: it finds the nearest one, and points there</span>.</p>
+<h3 id="site-needles">The Altar, Cathedral, Mansion and Gardens Needles</h3>
+<p>Since 1.63.2, compasses you can make for the places you go back to (the Cathedral Needle since 1.72.3). Use one and its needle swings round and settles on the nearest of its place ("The needle settles on the Forsaken Altar - 412 blocks north-east", for example); after that it points there wherever you go in the Overworld, until you use it again. With none anywhere near: "The needle spins and spins. There's none anywhere near." Anywhere but the Overworld: "The needle won't settle. What it's looking for is up in the Overworld." Their shared power line: <span class="mc-tip__power">Use it: it finds the nearest one, and points there</span>. Since 1.63.4 they find their place from anywhere: where it stands, or where it will rise the first time you come near.</p>
+<p><strong>You start with three.</strong> Since 1.72.3 the Altar Needle, the Cathedral Needle and the Gardens Needle go into your inventory the first time you join a world. A world you've already played gives them to you the next time you join, once only. The Mansion Needle you still make.</p>
 <div class="items">
   <div class="item" id="altar-needle">
     <div class="slot"><img src="{root}assets/img/items/forsaken-altar-compass.png" alt="Altar Needle icon" width="64" height="64"></div>
     <div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Altar Needle</p><p class="mc-tip__power">Use it: it finds the nearest one, and points there</p><p class="mc-tip__desc">For the altars the old things were given to.</p></div><p><strong>Recipe:</strong> a compass, a candle and a bone. Finds the nearest Forsaken Altar.</p></div>
+  </div>
+  <div class="item" id="cathedral-needle">
+    <div class="slot slot--empty" aria-hidden="true"></div>
+    <div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Cathedral Needle</p><p class="mc-tip__power">Use it: it finds the nearest one, and points there</p></div><p><strong>Recipe:</strong> a compass, a purple stained glass pane and a candle. Finds the <a href="{root}places/cathedral.html">Cathedral of the Hollow</a>. A brass case like the others, with a violet ring and a faint cathedral on its face. New in 1.72.3. <span class="todo-inline">Its grey line, and its icon: 1.72.3's files aren't here yet.</span></p></div>
   </div>
   <div class="item" id="mansion-needle">
     <div class="slot"><img src="{root}assets/img/items/murder-mansion-compass.png" alt="Mansion Needle icon" width="64" height="64"></div>
@@ -290,7 +295,7 @@ desc: Static Hollow's items and blocks: the Relay Core, compasses and the Watche
     <div class="slot"><img src="{root}assets/img/items/vacuum-tube.png" alt="Vacuum Tube icon" width="64" height="64"></div>
     <div class="item__body">
       <div class="mc-tip"><p class="mc-tip__name">Vacuum Tube</p><p class="mc-tip__power">Still warm</p><p class="mc-tip__desc">Out of one of the Tuned's sets. It glows a little, faintly orange.</p><p class="mc-tip__desc">Two of them, with glass and iron, make a set of your own.</p></div>
-      <p><strong>From:</strong> some of the Tuned, and the Projectionist. <strong>Makes:</strong> two <strong>Old Sets</strong> (<code>I G I / T R T / I I I</code>: I iron ingot, G glass pane, T Vacuum Tube, R redstone), old televisions that hum, with static crawling on them; use one to switch it on or off. Also goes into the Tuning Fork and the Relay Staff.</p>
+      <p><strong>From:</strong> some of the Tuned, and the Projectionist; since 1.63.16 the Carrier Wave's valve bulbs and Handsets, and its dead drops. <strong>Makes:</strong> two <strong>Old Sets</strong> (<code>I G I / T R T / I I I</code>: I iron ingot, G glass pane, T Vacuum Tube, R redstone), old televisions that hum, with static crawling on them; use one to switch it on or off. Also goes into the Tuning Fork, the Relay Staff and the <a href="#receiver">Receiver</a>. An Old Set that's on is where the <a href="#help-wanted-flyer">HELP WANTED flyer</a> turns up.</p>
     </div>
   </div>
 </div>
@@ -334,7 +339,7 @@ desc: Static Hollow's items and blocks: the Relay Core, compasses and the Watche
     <div class="item__body">
       <div class="mc-tip"><p class="mc-tip__name">The Remote</p></div>
       <p>An old television's remote, heavy, its buttons worn smooth, the one with nothing on it warm. The Watcher gives it to you after <a href="{root}places/the-hub.html">the Hub</a>, and it earns <strong>Channel Changer</strong>. Press it: you're in the Hub. Press it in the Hub: home. Before it has anywhere to go: "You press the blank button. Nothing. Not yet."</p>
-      <p>In 1.59 he handed it over when you landed at home ("take this. if you need to go back - it's still there."). Since 1.62.0 the fall from the Hub goes to the Dead Water instead: he hands it over on the rig ("take this. it'll get you back - to the hub, and home.") and it cracks in your hand. See the <a href="#broken-remote">Broken Remote</a>. Mended, it does one more thing: "Press it: the Hub (and in the Hub, home). Crouch and press it: back to the rig."</p>
+      <p>In 1.59 he handed it over when you landed at home ("take this. if you need to go back - it's still there."). Since 1.62.0 the fall from the Hub goes to the Dead Water instead: he hands it over on the rig ("take this. it'll get you back - to the hub, and home.") and it cracks in your hand. See the <a href="#broken-remote">Broken Remote</a>. Mended, it does one more thing: "Press it: the Hub (and in the Hub, home). Crouch and press it: back to the rig." In Chapter Nine it becomes <a href="#the-remote-mutated">the Remote (Mutated)</a>.</p>
     </div>
   </div>
 </div>
@@ -399,8 +404,348 @@ desc: Static Hollow's items and blocks: the Relay Core, compasses and the Watche
   <div class="item" id="pressure-plating">
     <div class="slot"><img src="{root}assets/img/items/pressure-plating.png" alt="Pressure Plating icon" width="64" height="64"></div>
     <div class="item__body">
-      <div class="mc-tip"><p class="mc-tip__name">Pressure Plating</p><p class="mc-tip__power">Submarine Hull Plating</p><p class="mc-tip__desc">Crouch and use it on ORPHEUS: plated, it can go as deep as the sea goes</p></div>
-      <p><strong>Recipe:</strong> <code>B T B / H O H / B T B</code> (B iron block, T Needle Tooth, H Shroud Hide, O obsidian). Also found in Sink Station and the wreck field. Without it the submarine is rated to 183 m.</p>
+      <div class="mc-tip"><p class="mc-tip__name">Pressure Plating</p><p class="mc-tip__power">Submarine Hull Plating</p><p class="mc-tip__desc">Fit it in ORPHEUS&#x27;s upgrade bay (or crouch and use it on her): plated, she can go as deep as the sea goes</p></div>
+      <p><strong>Recipe:</strong> <code>B T B / H O H / B T B</code> (B iron block, T Needle Tooth, H Shroud Hide, O obsidian). Also found in Sink Station and the wreck field. Plated, she has no crush depth at all ("plated - no crush depth"). Since 1.63.8 it's one of the modules in her <a href="#upgrade-bay">upgrade bay</a> (a sub plated before then has its plating in the bay). With nothing fitted she's rated to 183 m.</p>
+    </div>
+  </div>
+</div>
+<h3 id="upgrade-bay">ORPHEUS's upgrade bay</h3>
+<p>Since 1.63.8: use ORPHEUS's motor (aft, in the engine room) and her upgrade bay opens, five mounts for modules to fit, swap and take out as you like. What's in it is what she has, and the motor tells you her rating. Crouching and using a module on her still works: it goes into the bay. Once all three are in it (the <a href="#pressure-plating">Pressure Plating</a>, the Depth Module and the UV Field Module), <a href="{root}story/chapter-9.html">Chapter Nine</a> begins.</p>
+<div class="items">
+  <div class="item" id="depth-module">
+    <div class="slot"><img src="{root}assets/img/items/depth-module.png" alt="Depth Module (280 m) icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Depth Module (280 m)</p><p class="mc-tip__power">Submarine Upgrade</p><p class="mc-tip__desc">Fit it in ORPHEUS&#x27;s upgrade bay (the motor, aft): she&#x27;s rated to 280 m</p></div>
+      <p><strong>Recipe:</strong> <code>I C I / G R G / I C I</code> (I iron block, C copper block, G tinted glass, R block of redstone). There's one in the parts crate on the catwalk of the rig's sub bay (a rig that was already up gets the crate too). Fitted, she's rated to 280 m, against 183 m with nothing.</p>
+    </div>
+  </div>
+  <div class="item" id="uv-field-module">
+    <div class="slot"><img src="{root}assets/img/items/uv-field-module.png" alt="UV Field Module icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">UV Field Module</p><p class="mc-tip__power">Submarine Upgrade</p><p class="mc-tip__desc">Fit it in ORPHEUS&#x27;s upgrade bay: a ring of UV lamps round her hull keeps Enzyme 1-2418 off her</p></div>
+      <p><strong>Recipe:</strong> <code>E C E / G R G / E C E</code> (E <a href="#uv-emitter">UV Emitter</a>, C copper block, G glowstone, R block of redstone). Fitted, her floodlights burn violet: the Enzyme stays off her in the Haemal Reach and is burnt out of her crew, and if she's already going to flesh it burns it off her (her tentacles let go of whoever they're holding).</p>
+    </div>
+  </div>
+</div>
+<h3 id="the-static-heart">The Static Heart</h3>
+<div class="items">
+  <div class="item" id="static-heart">
+    <div class="slot"><img src="{root}assets/img/items/static-heart.png" alt="The Static Heart icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">The Static Heart</p><p class="mc-tip__power">From the Canticle&#x27;s Anchor</p><p class="mc-tip__desc">Warm, and beating - to no rhythm of its own. There&#x27;s a picture in it, of nothing, always moving</p><p class="mc-tip__desc">Keep it. Something is going to be made with it</p></div>
+      <p><strong>From:</strong> the chest in the hollow of the Canticle's anchor's crown, a hundred blocks of anchor on the floor of the void (go in on its west side). Added in 1.63.8. <span class="todo-inline">Nothing in 1.72.2 makes anything with it: the Remote (Mutated) is made with the Harbinger's heart. What is it for?</span></p>
+    </div>
+  </div>
+</div>
+<h3 id="the-uv-kit">Enzyme 1-2418 and the UV kit</h3>
+<p>Since 1.63.9 the Haemal Reach's water is full of Enzyme 1-2418, and without the right dress it gets into you (see <a href="{root}places/the-dead-water.html">the Dead Water</a>). Milk doesn't touch it. This is what gets it out again. The suit that keeps it out, the UV Dive Suit, is on <a href="{root}items/chapter-gear.html#the-uv-dive-suit">Gear for every chapter</a>.</p>
+<div class="items">
+  <div class="item" id="uv-lamp">
+    <div class="slot"><img src="{root}assets/img/items/uv-lamp.png" alt="UV Lamp icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">UV Lamp</p><p class="mc-tip__power">Burns It Out</p><p class="mc-tip__desc">Held, it lights the dark - and the Stretched won&#x27;t come into its light.</p><p class="mc-tip__desc">Use it to flash it: a fifth of the Enzyme burnt out of you, the</p><p class="mc-tip__desc">Stretched near you scorched and driven off; in ORPHEUS, flesh off her walls</p></div>
+      <p><strong>Recipe:</strong> <code>. I E / I R I / K I .</code> (E UV Emitter, I iron ingot, R redstone, K dried kelp). Also in the lockers at the Haemal Research Station, with the UV Dive Suit. After a flash it needs ten seconds to charge.</p>
+    </div>
+  </div>
+  <div class="item" id="enzyme-inhibitor">
+    <div class="slot"><img src="{root}assets/img/items/enzyme-inhibitor.png" alt="Enzyme Inhibitor icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Enzyme Inhibitor</p><p class="mc-tip__power">1-2418 / One Dose</p><p class="mc-tip__desc">The lab&#x27;s auto-injector. Into your thigh: half of the Enzyme in you</p><p class="mc-tip__desc">gone, and for thirty seconds none of it takes. Even when the Heart</p><p class="mc-tip__desc">has you, it can still get you loose</p></div>
+      <p><strong>From:</strong> the Haemal Research Station: two or three in the office, with its log, and more in its other chests and lockers. The Stretched drop them too.</p>
+    </div>
+  </div>
+  <div class="item" id="research-log">
+    <div class="slot"><img src="{root}assets/img/items/enzyme-log.png" alt="Research Log, HRS-3 icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Research Log, HRS-3</p><p class="mc-tip__power">Project 1-2418</p><p class="mc-tip__desc">Haemal Research Station&#x27;s last log book, in its sealed sleeve.</p><p class="mc-tip__desc">Use it to read it, an entry at a time</p></div>
+      <p><strong>From:</strong> the office chest at the Haemal Research Station. Use it and it reads you one entry at a time, in order, then round again. All nine entries are on <a href="{root}lore/index.html#research-log-hrs-3">Notes and books</a>.</p>
+    </div>
+  </div>
+  <div class="item" id="photophore">
+    <div class="slot"><img src="{root}assets/img/items/photophore.png" alt="Photophore icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Photophore</p><p class="mc-tip__power">Light Organ</p><p class="mc-tip__desc">Out of a Lanternlet. Its core still burns, blue-violet,</p><p class="mc-tip__desc">and it doesn&#x27;t stop when you cut it out. (UV.)</p></div>
+      <p><strong>From:</strong> Lanternlets; the lab's chests. The Ember Crew buy them. Goes into UV Emitters.</p>
+    </div>
+  </div>
+  <div class="item" id="glow-gel">
+    <div class="slot"><img src="{root}assets/img/items/glow-gel.png" alt="Glow Gel icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Glow Gel</p><p class="mc-tip__power">Luminous Jelly</p><p class="mc-tip__desc">A Thimble Jelly&#x27;s light, scraped out of it: a glob that glows</p><p class="mc-tip__desc">on its own. Put it round a filament and it carries the UV</p></div>
+      <p><strong>From:</strong> Thimble Jellies, the Stretched; the lab's chests. Goes into UV Emitters.</p>
+    </div>
+  </div>
+  <div class="item" id="uv-emitter">
+    <div class="slot"><img src="{root}assets/img/items/uv-emitter.png" alt="UV Emitter icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">UV Emitter</p><p class="mc-tip__power">Ultraviolet</p><p class="mc-tip__desc">A tube of violet glass, burning. Enzyme 1-2418 can&#x27;t stand it:</p><p class="mc-tip__desc">it&#x27;s what a UV Lamp and ORPHEUS&#x27;s UV Field are made of</p></div>
+      <p><strong>Recipe:</strong> <code>C G C / P B P / C A C</code> (C copper ingot, G Glow Gel, P Photophore, B Lantern Bulb, A amethyst shard) makes two. Also in the lab's chests and lockers.</p>
+    </div>
+  </div>
+</div>
+<h3 id="ember-trade">The Ember Crew's trade</h3>
+<p>Since 1.63.10 the crew of the Ember Pumping Station trade: right-click one of them (crouch to just talk). They sell these four (and ancient debris, now and then) for iron, copper and gold, and buy Needle Teeth, Shroud Hide, Photophores and Signal Organs. They restock every half day. All four go into the <a href="{root}items/chapter-gear.html#the-ember-deep-suit">Ember Deep Suit</a>. Ember Plating is in the station's own chests too.</p>
+<div class="items">
+  <div class="item" id="ember-plating">
+    <div class="slot"><img src="{root}assets/img/items/ember-plating.png" alt="Ember Plating icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Ember Plating</p><p class="mc-tip__power">Deep Suit Part</p><p class="mc-tip__desc">Scorched alloy, cast at the Ember Pumping Station from what comes</p><p class="mc-tip__desc">through the portal. The Ember Crew trade it for iron</p></div>
+      <p>Goes into all four pieces of the suit.</p>
+    </div>
+  </div>
+  <div class="item" id="heat-coil">
+    <div class="slot"><img src="{root}assets/img/items/heat-coil.png" alt="Heat Coil icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Heat Coil</p><p class="mc-tip__power">Deep Suit Part</p><p class="mc-tip__desc">Copper wound round a core that never cools. It keeps a</p><p class="mc-tip__desc">deep suit warm at the bottom of the void. (Traded for copper)</p></div>
+      <p>Goes into the helmet, the hull and the legs.</p>
+    </div>
+  </div>
+  <div class="item" id="pressure-seal">
+    <div class="slot"><img src="{root}assets/img/items/pressure-seal.png" alt="Pressure Seal icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Pressure Seal</p><p class="mc-tip__power">Deep Suit Part</p><p class="mc-tip__desc">A bronze ring and its gasket: what keeps the sea out of a joint</p><p class="mc-tip__desc">at any depth there is. (Traded for gold)</p></div>
+      <p>Goes into all four pieces of the suit.</p>
+    </div>
+  </div>
+  <div class="item" id="vent-glass">
+    <div class="slot"><img src="{root}assets/img/items/vent-glass.png" alt="Vent Glass icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Vent Glass</p><p class="mc-tip__power">Deep Suit Part</p><p class="mc-tip__desc">A port glass a hand thick, smoked orange. The Ember Crew pour it</p><p class="mc-tip__desc">over the vents (traded for copper and needle teeth)</p></div>
+      <p>Goes into the helmet.</p>
+    </div>
+  </div>
+</div>
+<h3 id="mycelia-makings">The Drowned Mycelia</h3>
+<p>What its growth makes (since 1.63.13). A drowned diver's barrel in a Gillmaws' nest, in the caves under its floor, holds his teeth, his tonic, his bolts and his flares, and now and then his spear.</p>
+<div class="items">
+  <div class="item" id="gillmaw-tooth">
+    <div class="slot"><img src="{root}assets/img/items/gillmaw-tooth.png" alt="Gillmaw Tooth icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Gillmaw Tooth</p><p class="mc-tip__power">Still sharp</p><p class="mc-tip__desc">Out of a Gillmaw&#x27;s cap, where the gills should be.</p><p class="mc-tip__desc">It&#x27;s warm. Spear tips, and nothing better.</p></div>
+      <p><strong>From:</strong> Gillmaws; the divers' barrels.</p>
+    </div>
+  </div>
+  <div class="item" id="gillmaw-spear">
+    <div class="slot"><img src="{root}assets/img/items/gillmaw-spear.png" alt="Gillmaw-Tooth Spear icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Gillmaw-Tooth Spear</p><p class="mc-tip__power">Catches and holds</p><p class="mc-tip__desc">A spear tipped with a Gillmaw&#x27;s teeth, lashed with hyphae.</p><p class="mc-tip__desc">What it hits is slowed - the more so in the water.</p></div>
+      <p><strong>Recipe:</strong> <code>. . T / . S . / S . .</code> (T Gillmaw Tooth, S stick), like any spear: it lunges and charges like the others.</p>
+    </div>
+  </div>
+  <div class="item" id="drifter-jelly">
+    <div class="slot"><img src="{root}assets/img/items/drifter-jelly.png" alt="Drifter Jelly icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Drifter Jelly</p><p class="mc-tip__power">Tastes of the dark</p><p class="mc-tip__desc">Out of a Spore Drifter&#x27;s bell. For a while after, you see in the</p><p class="mc-tip__desc">dark under the water, and breathe longer. It&#x27;s full of spores</p></div>
+      <p><strong>From:</strong> Spore Drifters; the divers' barrels.</p>
+    </div>
+  </div>
+  <div class="item" id="spore-pouch">
+    <div class="slot"><img src="{root}assets/img/items/spore-pouch.png" alt="Spore Pouch icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Spore Pouch</p><p class="mc-tip__power">Throw it</p><p class="mc-tip__desc">A drifter&#x27;s bladder stuffed with spores. Bursts in a cloud four</p><p class="mc-tip__desc">blocks round: the dark, the sickness - and hunters lose you. Sea things</p><p class="mc-tip__desc">scatter; a Gillmaw clamps shut. Don&#x27;t stand in it yourself</p></div>
+      <p><strong>Recipe:</strong> Drifter Jelly, string and a brown mushroom make two.</p>
+    </div>
+  </div>
+  <div class="item" id="spore-tonic">
+    <div class="slot"><img src="{root}assets/img/items/spore-tonic.png" alt="Spore Tonic icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Spore Tonic</p><p class="mc-tip__power">Burns going down</p><p class="mc-tip__desc">Charcoal, brine salt and kelp, steeped black. The divers&#x27; own</p><p class="mc-tip__desc">cure: most of the spores burnt out of you, and for a minute none</p><p class="mc-tip__desc">of them take. The caps on you wither</p></div>
+      <p><strong>Recipe:</strong> a glass bottle, charcoal, sugar and dried kelp. It burns sixty of the spores out of you, and for a minute none of them take. Milk does nothing. <span class="todo-inline">Its tooltip says brine salt goes into it; the recipe takes sugar.</span></p>
+    </div>
+  </div>
+  <div class="item" id="lantern-cap-lamp"><div class="slot"><img src="{root}assets/img/items/lantern-cap-lamp.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Lantern-Cap Lamp</p></div><p><strong>Recipe:</strong> <code>. H . / G L G / N G N</code> (H Hanging Hyphae, G glass pane, L Lantern Caps, N iron nugget). A jar of lantern caps, still alive, still lit: as bright as a lantern, and it doesn't go out under the sea. It stands or hangs.</p></div></div>
+  <div class="item" id="hyphae-rope-ladder"><div class="slot"><img src="{root}assets/img/items/block-hyphae-ladder.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Hyphae Rope Ladder</p></div><p><strong>Recipe:</strong> <code>H . H / H H H / H . H</code> (H Hanging Hyphae) makes four. It goes on a wall like a ladder, or hangs free from the underside of anything; use one on a ladder already hung and it unrolls another rung from the bottom.</p></div></div>
+</div>
+<h3 id="brine-and-rime">The Brine Sink and the Rime Shelf</h3>
+<p>Made and eaten since 1.63.14.</p>
+<div class="items">
+  <div class="item" id="brine-salt">
+    <div class="slot"><img src="{root}assets/img/items/brine-salt.png" alt="Brine Salt icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Brine Salt</p><p class="mc-tip__power">Sharp and bitter</p><p class="mc-tip__desc">Salt out of the Brine Sink. It keeps fish - salt</p><p class="mc-tip__desc">one and it&#x27;ll last. It won&#x27;t do your thirst any good</p></div>
+      <p><strong>From:</strong> Halite (break it, or one Halite makes three) and Wavers.</p>
+    </div>
+  </div>
+  <div class="item" id="salted-fish">
+    <div class="slot"><img src="{root}assets/img/items/salted-fish.png" alt="Salted Fish icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Salted Fish</p><p class="mc-tip__power">Keeps forever</p><p class="mc-tip__desc">Filling - but it&#x27;s salt all through.</p><p class="mc-tip__desc">You&#x27;ll be thirsty after</p></div>
+      <p><strong>Recipe:</strong> a raw cod or salmon and Brine Salt. Pickled fish give it too.</p>
+    </div>
+  </div>
+  <div class="item" id="mussels">
+    <div class="slot"><img src="{root}assets/img/items/mussels.png" alt="Mussels icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Mussels</p><p class="mc-tip__power">Raw</p><p class="mc-tip__desc">Off the shores of the brine pools. Cook them -</p><p class="mc-tip__desc">raw, they might turn your stomach</p></div>
+      <p><strong>From:</strong> mussel beds round the brine pools; Wavers.</p>
+    </div>
+  </div>
+  <div class="item" id="cooked-mussels">
+    <div class="slot"><img src="{root}assets/img/items/cooked-mussels.png" alt="Cooked Mussels icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Cooked Mussels</p><p class="mc-tip__power">Steamed open</p><p class="mc-tip__desc">Good, honest food, down here.</p></div>
+      <p>Mussels in a furnace, a smoker or on a campfire.</p>
+    </div>
+  </div>
+  <div class="item" id="blubber">
+    <div class="slot"><img src="{root}assets/img/items/blubber.png" alt="Blubber icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Blubber</p><p class="mc-tip__power">Warms you through</p><p class="mc-tip__desc">A Rimeback&#x27;s fat. Not much of a meal,</p><p class="mc-tip__desc">but it keeps the cold off you for a long while</p></div>
+      <p><strong>From:</strong> Rimebacks, and the flesh on a fallen whale.</p>
+    </div>
+  </div>
+  <div class="item" id="frost-shard">
+    <div class="slot"><img src="{root}assets/img/items/frost-shard.png" alt="Frost Shard icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Frost Shard</p><p class="mc-tip__power">Colder than it should be</p><p class="mc-tip__desc">Ice off the Rime Shelf that won&#x27;t melt in your hand.</p><p class="mc-tip__desc">Pack it round brine salt and it keeps the cold in</p></div>
+      <p><strong>From:</strong> anchor ice (or one Anchor Ice makes two), brinicles, fish in the ice, Rime Striders and Rimebacks.</p>
+    </div>
+  </div>
+  <div class="item" id="rime-charge">
+    <div class="slot"><img src="{root}assets/img/items/rime-charge.png" alt="Rime Charge icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Rime Charge</p><p class="mc-tip__power">Throw it</p><p class="mc-tip__desc">Frost shards packed round brine salt and bound tight. It</p><p class="mc-tip__desc">bursts in a flash of cold three blocks round - whatever&#x27;s</p><p class="mc-tip__desc">in it is frozen nearly still, and the floor ices over</p></div>
+      <p><strong>Recipe:</strong> two Frost Shards, Brine Salt and string make two.</p>
+    </div>
+  </div>
+</div>
+<h3 id="lanterns-and-wire">The Lantern Fields and the Wireweed Forest</h3>
+<p>Made and found since 1.63.15.</p>
+<div class="items">
+  <div class="item" id="coral-wax">
+    <div class="slot"><img src="{root}assets/img/items/wax.png" alt="Coral Wax icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Coral Wax</p><p class="mc-tip__power">Burns under water</p><p class="mc-tip__desc">Out of candle coral. Twist it round a string</p><p class="mc-tip__desc">and the flame won&#x27;t go out, wet or dry</p></div>
+      <p><strong>From:</strong> candle coral.</p>
+    </div>
+  </div>
+  <div class="item" id="sea-candle"><div class="slot"><img src="{root}assets/img/items/sea-candle.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Sea Candle</p></div><p><strong>Recipe:</strong> Coral Wax and string make two. A candle that burns under the water.</p></div></div>
+  <div class="item" id="drowned-lantern"><div class="slot"><img src="{root}assets/img/items/drowned-lantern.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Drowned Lantern</p></div><p><strong>Recipe:</strong> <code>N N N / N C N / N N N</code> (N iron nugget, C Sea Candle). The Lantern Fields' own, standing about still lit.</p></div></div>
+  <div class="item" id="lantern-tether"><div class="slot"><img src="{root}assets/img/items/block-lantern-tether.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Lantern Tether</p></div><p><strong>Recipe:</strong> three string make three. To hang a lantern on.</p></div></div>
+  <div class="item" id="moth-dust">
+    <div class="slot"><img src="{root}assets/img/items/moth-dust.png" alt="Moth Dust icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Moth Dust</p><p class="mc-tip__power">Glitters in the dark</p><p class="mc-tip__desc">Off a Lantern Moth&#x27;s wings. It&#x27;s what lights them -</p><p class="mc-tip__desc">and it gets in your eyes</p></div>
+      <p><strong>From:</strong> Lantern Moths and Lampmothers.</p>
+    </div>
+  </div>
+  <div class="item" id="lumen-lure">
+    <div class="slot"><img src="{root}assets/img/items/lumen-lure.png" alt="Lumen Lure icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Lumen Lure</p><p class="mc-tip__power">Throw it</p><p class="mc-tip__desc">Moth dust packed in glow ink, on a string. It hangs where</p><p class="mc-tip__desc">it stops and shines for half a minute: the sea&#x27;s light-lovers</p><p class="mc-tip__desc">come to it - and anything hunting you goes for it instead</p></div>
+      <p><strong>Recipe:</strong> two Moth Dust, a glow ink sac and string make two.</p>
+    </div>
+  </div>
+  <div class="item" id="copper-wire">
+    <div class="slot"><img src="{root}assets/img/items/copper-wire.png" alt="Copper Wire icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Copper Wire</p><p class="mc-tip__power">Still carries a charge</p><p class="mc-tip__desc">From the Wireweed Forest&#x27;s copper moss, and</p><p class="mc-tip__desc">what lives on it. Or draw your own from an ingot</p></div>
+      <p><strong>From:</strong> copper moss, Wirecutters, Coilbacks and Handsets; or a copper ingot makes four.</p>
+    </div>
+  </div>
+  <div class="item" id="fuse">
+    <div class="slot"><img src="{root}assets/img/items/fuse.png" alt="Fuse icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Fuse</p><p class="mc-tip__power">Full of current</p><p class="mc-tip__desc">What a fuse pod leaves when it blows. Wind it</p><p class="mc-tip__desc">in copper wire and it&#x27;ll let all that current go at once</p></div>
+      <p><strong>From:</strong> fuse pods (touch one and it blows: a shock, and a fuse to pick up); Wirecutters.</p>
+    </div>
+  </div>
+  <div class="item" id="live-wire"><div class="slot"><img src="{root}assets/img/items/block-live-wire.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Live Wire</p></div><p><strong>Recipe:</strong> a Fuse and three Copper Wire make four. Strung over the floor, it shocks anything that comes through it but you.</p></div></div>
+  <div class="item" id="arc-charge">
+    <div class="slot"><img src="{root}assets/img/items/arc-charge.png" alt="Arc Charge icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Arc Charge</p><p class="mc-tip__power">Throw it</p><p class="mc-tip__desc">A fuse wound in copper wire. Where it bursts, the charge jumps</p><p class="mc-tip__desc">from one living thing to the next - five of them, six blocks a</p><p class="mc-tip__desc">jump, harder in the water. Never back to you</p></div>
+      <p><strong>Recipe:</strong> a Fuse and two Copper Wire make two.</p>
+    </div>
+  </div>
+</div>
+<h3 id="bones-and-broadcast">The Ossuary Flats and the Carrier Wave</h3>
+<p>Made and found since 1.63.16. <a href="#vacuum-tube">Vacuum Tubes</a> come from the valve bulbs and the Handsets now too.</p>
+<div class="items">
+  <div class="item" id="skull">
+    <div class="slot"><img src="{root}assets/img/items/skull.png" alt="Skull icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Skull</p><p class="mc-tip__power">Something lived in it</p><p class="mc-tip__desc">Off a skullkeep&#x27;s back. Put a sea candle</p><p class="mc-tip__desc">inside it and it makes a lantern</p></div>
+      <p><strong>From:</strong> skullkeeps.</p>
+    </div>
+  </div>
+  <div class="item" id="skull-lantern"><div class="slot"><img src="{root}assets/img/items/skull-lantern.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Skull Lantern</p></div><p><strong>Recipe:</strong> a Skull and a Sea Candle. A lantern with its eyes lit, wet or dry, standing or hanging.</p></div></div>
+  <div class="item" id="whalebone-bricks"><div class="slot"><img src="{root}assets/img/items/block-whalebone-bricks.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Whalebone Bricks</p></div><p><strong>Recipe:</strong> <code>W W / W W</code> (W Whalebone, from the whale falls) makes four.</p></div></div>
+  <div class="item" id="sleeper-meat">
+    <div class="slot"><img src="{root}assets/img/items/sleeper-meat.png" alt="Sleeper Meat icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Sleeper Meat</p><p class="mc-tip__power">Poisonous raw</p><p class="mc-tip__desc">Off a Sleeper. Eaten raw it makes you reel and</p><p class="mc-tip__desc">sicken. Cure it in brine salt first</p></div>
+      <p><strong>From:</strong> Sleepers.</p>
+    </div>
+  </div>
+  <div class="item" id="cured-sleeper">
+    <div class="slot"><img src="{root}assets/img/items/cured-sleeper.png" alt="Cured Sleeper icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Cured Sleeper</p><p class="mc-tip__power">Your eyes open in the dark</p><p class="mc-tip__desc">Sleeper meat cured in brine salt: rank, strong -</p><p class="mc-tip__desc">and you&#x27;ll see in the deep for a minute and a half</p></div>
+      <p><strong>Recipe:</strong> Sleeper Meat and Brine Salt.</p>
+    </div>
+  </div>
+  <div class="item" id="magnetic-tape">
+    <div class="slot"><img src="{root}assets/img/items/magnetic-tape.png" alt="Magnetic Tape icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Magnetic Tape</p><p class="mc-tip__power">Something&#x27;s recorded on it</p><p class="mc-tip__desc">From tape weed, and the echo jellies. Too slow</p><p class="mc-tip__desc">and too low to make out what it says</p></div>
+      <p><strong>From:</strong> tape weed and echo jellies.</p>
+    </div>
+  </div>
+  <div class="item" id="receiver">
+    <div class="slot"><img src="{root}assets/img/items/receiver.png" alt="Receiver icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Receiver</p><p class="mc-tip__power">Picks up the broadcast</p><p class="mc-tip__desc">Carry it when the Carrier Wave&#x27;s horns read out their</p><p class="mc-tip__desc">numbers and it keeps them. Use it to hear them again -</p><p class="mc-tip__desc">and hold it: its crackle tells you how near you are</p></div>
+      <p><strong>Recipe:</strong> <code>V A V / C T C / I I I</code> (V Vacuum Tube, A Antenna Weed, C Copper Wire, T Magnetic Tape, I iron ingot). Also left at the dead drops and the diving bells. When the broadcast goes out with it on you: "Your receiver crackles: it caught the numbers." Before then: "...static. Nothing on its tape yet."</p>
+    </div>
+  </div>
+  <div class="item" id="horn-speaker"><div class="slot"><img src="{root}assets/img/items/block-horn-speaker.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Horn Speaker</p></div><p><strong>Recipe:</strong> <code>. I / I C / . I</code> (I iron ingot, C Copper Wire). To build with, with the <strong>Dish Plate</strong> (two iron ingots and white dye make four).</p></div></div>
+</div>
+<h3 id="teeth-and-nets">The Molar Reef and the Dead Water</h3>
+<p>Made and found since 1.63.17.</p>
+<div class="items">
+  <div class="item" id="milk-tooth">
+    <div class="slot"><img src="{root}assets/img/items/milk-tooth.png" alt="Milk Tooth icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Milk Tooth</p><p class="mc-tip__power">Somebody&#x27;s</p><p class="mc-tip__desc">A child&#x27;s tooth, out of the Molar Reef&#x27;s gum.</p><p class="mc-tip__desc">Three on a string, and the fairy leaves you be</p></div>
+      <p><strong>From:</strong> milk teeth on the reef's floor, Gnashers and tooth fairies.</p>
+    </div>
+  </div>
+  <div class="item" id="tooth-charm">
+    <div class="slot"><img src="{root}assets/img/items/tooth-charm.png" alt="Tooth Charm icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Tooth Charm</p><p class="mc-tip__power">The Tooth Fairy leaves you be</p><p class="mc-tip__desc">Milk teeth on a string. Carry it, and the</p><p class="mc-tip__desc">fairy won&#x27;t come to take anything of yours</p></div>
+      <p><strong>Recipe:</strong> string and three Milk Teeth.</p>
+    </div>
+  </div>
+  <div class="item" id="reef-gum">
+    <div class="slot"><img src="{root}assets/img/items/reef-gum.png" alt="Reef Gum icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Reef Gum</p><p class="mc-tip__power">Chew it</p><p class="mc-tip__desc">Out of a gum blister. It numbs: the toothache</p><p class="mc-tip__desc">goes, and the sickness with it</p></div>
+      <p><strong>From:</strong> gum blisters. Chew it: the toothache, the sickness and the slowness all go, and it wets your mouth a little.</p>
+    </div>
+  </div>
+  <div class="item" id="enamel-shard">
+    <div class="slot"><img src="{root}assets/img/items/enamel-shard.png" alt="Enamel Shard icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Enamel Shard</p><p class="mc-tip__power">Hard as a tooth</p><p class="mc-tip__desc">Off the Molar Reef&#x27;s teeth. Four of them</p><p class="mc-tip__desc">make a block of enamel again</p></div>
+      <p><strong>From:</strong> the giant teeth (enamel and decay), Gnashers and the tooth cavities. Four make a block of <strong>Enamel</strong>; four Enamel make four <strong>Polished Enamel</strong>.</p>
+    </div>
+  </div>
+  <div class="item" id="ghost-net"><div class="slot"><img src="{root}assets/img/items/block-ghost-net.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Ghost Net</p></div><p><strong>Recipe:</strong> <code>S S / S S</code> (S string). A net of your own, to hang, or to catch things in: swim into the mesh and it holds you slow.</p></div></div>
+  <div class="item" id="crab-pot"><div class="slot"><img src="{root}assets/img/items/block-crab-pot.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Crab Pot</p></div><p><strong>Recipe:</strong> <code>S F S / N . N / W W W</code> (S stick, F Net Float, N Ghost Net, W any planks). Set it in water and leave it. Come back and it's full: fish, mussels, ink, now and then something from the rig's crew. Use it to haul it up.</p></div></div>
+  <div class="item" id="rusticle">
+    <div class="slot"><img src="{root}assets/img/items/rusticle.png" alt="Rusticle icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Rusticle</p><p class="mc-tip__power">There&#x27;s iron in it yet</p><p class="mc-tip__desc">Rust off the rig&#x27;s iron. Smelt it</p><p class="mc-tip__desc">and you&#x27;ll get a nugget back</p></div>
+      <p><strong>From:</strong> the rusticles on sunk girders. Smelt it for an iron nugget.</p>
+    </div>
+  </div>
+  <div class="item" id="crew-tag">
+    <div class="slot"><img src="{root}assets/img/items/crew-tag.png" alt="Crew Tag icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Crew Tag</p><p class="mc-tip__power">A name, stamped in</p><p class="mc-tip__desc">One of the rig&#x27;s crew wore it. The name&#x27;s</p><p class="mc-tip__desc">worn too far to read</p></div>
+      <p><strong>From:</strong> the Catch, crab pots and the diving bell.</p>
     </div>
   </div>
 </div>
@@ -421,11 +766,179 @@ desc: Static Hollow's items and blocks: the Relay Core, compasses and the Watche
 </div>
 <p>The creatures themselves are in the <a href="{root}entities/index.html">bestiary</a>, and the Undertow has <a href="{root}entities/the-undertow.html">a page of its own</a>.</p>
 <h3 id="sea-blocks">The sea's blocks and plants</h3>
-<p>Every water has its own floor: <strong>Ash Silt</strong>, <strong>Clotted Silt</strong>, <strong>Rust Silt</strong>, <strong>Glow Sand</strong>, <strong>Bone Sand</strong>, <strong>Brine Crust</strong>, <strong>Gum Silt</strong>, <strong>Spore Silt</strong>, <strong>Rime Silt</strong>, <strong>Ember Crust</strong>, <strong>Static Sand</strong> and <strong>Abyss Silt</strong>. Growing on them, waterlogged where they grow: <strong>Grey Kelp</strong>, <strong>Vein Kelp</strong> (it glows), <strong>Wireweed</strong>, <strong>Signal Bulbs</strong>, <strong>Glow Anemones</strong>, <strong>Lantern Bulbs</strong>, <strong>Bone Coral</strong> and <strong>Bone Fans</strong>, <strong>Marrow Sponge</strong>, <strong>Clot Coral</strong>, <strong>Artery Anemones</strong>, <strong>Sulfur Tubes</strong>, <strong>Brine</strong> pools, <strong>Enamel Coral</strong>, <strong>Tooth Fans</strong>, <strong>Gum Sponge</strong>, <strong>Nerve Anemones</strong>, <strong>Drowned Stems</strong> and <strong>Drowned Caps</strong>, <strong>Spore Puffs</strong> (they burst in your face), <strong>Gill Glow</strong>, <strong>Rime Ice</strong>, <strong>Frost Anemones</strong>, <strong>Frozen Corpses</strong>, <strong>Vent Chimneys</strong>, <strong>Tube Worms</strong>, <strong>Static Coral</strong>, <strong>Antenna Weed</strong>, <strong>Void Moss</strong>, <strong>Drowned Sets</strong>, <strong>Sea Lights</strong> and <strong>Eye Pods</strong> (shut till you come near; then the eye opens and follows you). The submarine's <strong>Sub Clamp</strong> is on the catwalk in the rig's sub bay: it charges and mends ORPHEUS, and builds another for 16 iron ingots and 8 glass.</p>
+<p>Every water has its own floor: <strong>Ash Silt</strong>, <strong>Clotted Silt</strong>, <strong>Rust Silt</strong>, <strong>Glow Sand</strong>, <strong>Bone Sand</strong>, <strong>Brine Crust</strong>, <strong>Gum Silt</strong>, <strong>Spore Silt</strong>, <strong>Rime Silt</strong>, <strong>Ember Crust</strong>, <strong>Static Sand</strong> and <strong>Abyss Silt</strong>. Growing on them, waterlogged where they grow: <strong>Grey Kelp</strong>, <strong>Vein Kelp</strong> (it glows), <strong>Wireweed</strong>, <strong>Signal Bulbs</strong>, <strong>Glow Anemones</strong>, <strong>Lantern Bulbs</strong>, <strong>Bone Coral</strong> and <strong>Bone Fans</strong>, <strong>Marrow Sponge</strong>, <strong>Clot Coral</strong>, <strong>Artery Anemones</strong>, <strong>Sulfur Tubes</strong>, <strong>Brine</strong> pools, <strong>Enamel Coral</strong>, <strong>Tooth Fans</strong>, <strong>Gum Sponge</strong>, <strong>Nerve Anemones</strong>, <strong>Drowned Stems</strong> and <strong>Drowned Caps</strong>, <strong>Spore Puffs</strong> (they burst in your face), <strong>Gill Glow</strong>, <strong>Rime Ice</strong>, <strong>Frost Anemones</strong>, <strong>Frozen Corpses</strong>, <strong>Vent Chimneys</strong>, <strong>Tube Worms</strong>, <strong>Static Coral</strong>, <strong>Antenna Weed</strong>, <strong>Void Moss</strong>, <strong>Drowned Sets</strong>, <strong>Sea Lights</strong> and <strong>Eye Pods</strong> (shut till you come near; then the eye opens and follows you). Since 1.63.12 the waters have more of their own (giant drowned mushrooms, brine pools, lantern trees, cable trees, whale falls, listening dishes, giant teeth, ghost nets): see <a href="{root}places/the-dead-water.html">the Dead Water</a>.</p>
+<p>The submarine's <strong>Sub Clamps</strong> are under the water of the rig's sub bay, where she berths: they charge and mend ORPHEUS, and if she's lost one used with nothing in hand builds her again for 16 iron ingots and 8 glass. Since 1.63.21 the <strong>Sub Bay Console</strong> stands on the catwalk by her berth: use it to see where she is, or, if nothing's heard from her, to have the bay's welders build her again in her clamps (a minute's work, nothing asked of you); crouch and use it to scrap her where she lies and build her again. And since 1.66.6, when she's lost, <strong>ORPHEUS's Emergency Locker</strong> blows free with everything that was in her lockers and the modules out of her bay, and floats at the top of the sea, its lamp blinking: use it to open it, and empty it to sink it.</p>
 <div class="items">
   <div class="item"><div class="slot"><img src="{root}assets/img/items/block-glow-sand.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Glow Sand</p></div><p>One of the twelve floors.</p></div></div>
   <div class="item"><div class="slot"><img src="{root}assets/img/items/block-bone-sand.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Bone Sand</p></div><p>The Ossuary Flats' floor.</p></div></div>
 </div>
+
+<h2 id="chapter-nine-items">Chapter nine: the Harbinger</h2>
+<p>See <a href="{root}story/chapter-9.html">Chapter Nine</a>.</p>
+<div class="items">
+  <div class="item" id="static-heart-mutated">
+    <div class="slot"><img src="{root}assets/img/items/mutated-static-heart.png" alt="The Static Heart (Mutated) icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">The Static Heart (Mutated)</p><p class="mc-tip__power">Thrown up by the Harbinger</p><p class="mc-tip__desc">The Undertow&#x27;s static, grown through with the Grove&#x27;s threads</p><p class="mc-tip__desc">and the Reach&#x27;s flesh. It still beats - a little faster than yours.</p><p class="mc-tip__desc">Put it in the Remote (craft them together, broken or not).</p></div>
+      <p><strong>From:</strong> the Harbinger, three days after the Turning: it rises over the sea and brings the static heart up at your feet, one for each of you.</p>
+    </div>
+  </div>
+  <div class="item" id="the-remote-mutated">
+    <div class="slot"><img src="{root}assets/img/items/mutated-remote.png" alt="The Remote (Mutated) icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">The Remote (Mutated)</p><p class="mc-tip__power">It works again - and it roars</p><p class="mc-tip__desc">Press: the Hub (in it: home). Crouch and press: the Dead Water.</p><p class="mc-tip__desc">Hold, then let go: the Undertow&#x27;s roar - everything near thrown back,</p><p class="mc-tip__desc">and its echo shows you all that lives for a long way round.</p></div>
+      <p><strong>Recipe:</strong> the Static Heart (Mutated) with the Broken Remote, or with the mended Remote, in any order. It takes you to the Hub, home and back to the Dead Water, and it's more than it was: hold it, then let go, and the Undertow's roar comes out of your hand. Everything near you that isn't with you is thrown back, torn at and slowed (half as far again under water), and its echo makes everything alive for 48 blocks round glow. Then it's spent for fifteen seconds. The first roar earns <strong>Its Roar, In Your Hand</strong>.</p>
+    </div>
+  </div>
+</div>
+
+<h2 id="chapter-ten-items">Chapter ten: Stay Tuned</h2>
+<p>See <a href="{root}story/chapter-10.html">Chapter Ten</a> and <a href="{root}places/his-kingdom.html">his kingdom</a>. Blackout's armour, blade and tools are on <a href="{root}items/chapter-gear.html#blackout">Gear for every chapter</a>.</p>
+<div class="items">
+  <div class="item" id="steel-locker"><div class="slot"><img src="{root}assets/img/items/steel-locker.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Steel Locker</p></div><p><strong>Recipe:</strong> <code>I I I / I B I / I I I</code> (I iron ingot, B iron bars). Somewhere to hide: get in and pull the door to, and you see out through its vents and nothing sees in. One that's searching may come and stand at it, listening: if it heard you in there, or saw you go in, it tears it open and drags you out. (Crouch and use any bed to hide under it, too.) His burrows have lockers in them.</p></div></div>
+  <div class="item" id="broadcast-core"><div class="slot"><img src="{root}assets/img/items/block-broadcast-core.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Broadcast Core</p></div><p>The heart of each of his sites (the transmitter, the burrow, the set: on a set it's the camera's eye). Break it and the site goes off the air: its lamps go out, it calls nothing more, and the core gives up what it was burning (Signal Fragments and Blackout Shards).</p></div></div>
+  <div class="item" id="signal-fragment">
+    <div class="slot"><img src="{root}assets/img/items/signal-fragment.png" alt="Signal Fragment icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Signal Fragment</p><p class="mc-tip__power">What&#x27;s left of one of his creations</p><p class="mc-tip__desc">A sliver of his broadcast, still showing its bars.</p></div>
+      <p><strong>From:</strong> his creations (the Longplay, the Hanger, the Lookalike, ERR, the Announcer, the Cameraman, the Stagehand, the Faithful) and the Encore; broadcast cores; his sites' chests.</p>
+    </div>
+  </div>
+  <div class="item" id="blackout-shard">
+    <div class="slot"><img src="{root}assets/img/items/blackout-shard.png" alt="Blackout Shard icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Blackout Shard</p><p class="mc-tip__power">Deep rock his static has soaked into</p><p class="mc-tip__desc">Blacker than black. It takes the light.</p></div>
+      <p><strong>From:</strong> Blackout Ore; his servants (the Announcer, the Cameraman, the Stagehand), the Longplay and ERR; broadcast cores; his sites' chests.</p>
+    </div>
+  </div>
+  <div class="item" id="blackout-ore"><div class="slot"><img src="{root}assets/img/items/block-blackout-ore.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Blackout Ore</p></div><p>Deep down, where his static has seeped into the rock near you after the Broadcast. It needs a diamond pickaxe, and it spits sparks and crackles. Blackout tools take it fast.</p></div></div>
+  <div class="item" id="blackout-ingot">
+    <div class="slot"><img src="{root}assets/img/items/blackout-ingot.png" alt="Blackout Ingot icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Blackout Ingot</p><p class="mc-tip__power">The strongest there is</p><p class="mc-tip__desc">Four shards, four fragments, netherite. Nothing gets</p><p class="mc-tip__desc">through it - not even sound.</p></div>
+      <p><strong>Recipe:</strong> <code>F S F / S N S / F S F</code> (F Signal Fragment, S Blackout Shard, N netherite ingot). The first one earns <strong>Blackout</strong>.</p>
+    </div>
+  </div>
+  <div class="item" id="faithful-dagger">
+    <div class="slot"><img src="{root}assets/img/items/faithful-dagger.png" alt="Faithful&#x27;s Dagger icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Faithful&#x27;s Dagger</p><p class="mc-tip__power">His make</p><p class="mc-tip__desc">What his Faithful give themselves to him with</p></div>
+      <p><strong>From:</strong> his Faithful, one time in five (since 1.69.0). A quick blade: 5 damage, 2.4 attack speed.</p>
+    </div>
+  </div>
+</div>
+<p>His kingdom's own blocks (since 1.64.0): <strong>Signal Stone</strong> and <strong>Signal Bricks</strong> (with stairs, slabs and walls), <strong>Dead Screens</strong> and <strong>Signal Lamps</strong>.</p>
+<div class="items">
+  <div class="item"><div class="slot"><img src="{root}assets/img/items/block-signal-bricks.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Signal Bricks</p></div><p>From his kingdom.</p></div></div>
+  <div class="item"><div class="slot"><img src="{root}assets/img/items/block-dead-screen.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Dead Screen</p></div><p>From his kingdom.</p></div></div>
+</div>
+
+<h2 id="tune-in-town-items">Tune-In Town</h2>
+<p>Tune-In Town Pizza &amp; Playhouse (since 1.65.0) is a secret: find the old place by the HELP WANTED flyer, go through its STAFF ONLY door into Studio B, and work the night shift. It has flashing lights, flickering screens, loud noises and jumpscares, and the game warns you before the first one. See <a href="{root}places/tune-in-town.html">Tune-In Town</a>. Its things say what they are since 1.66.7 (before then their tooltips showed the names of their words).</p>
+<div class="items">
+  <div class="item" id="help-wanted-flyer">
+    <div class="slot"><img src="{root}assets/img/items/help-wanted-flyer.png" alt="HELP WANTED Flyer icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">HELP WANTED Flyer</p><p class="mc-tip__power">Tune-In Town Pizza &amp; Playhouse: Night Security, 12AM-6AM. Apply within. (It was on the television.)</p><p class="mc-tip__desc">Use: read the address (which way, how far)</p></div>
+      <p><strong>From:</strong> the television (since 1.65.3). Once in a long while, any time after your first day, an Old Set that's on stops showing static and shows it; one dark night, out in the open, you'll come on a set left on in the grass, showing it; and on Chapter Ten's third day someone knocks three times and leaves a set on your step. Look at it, or use it, and the flyer's in your hand. Read it for the way to the old place. Its text is on <a href="{root}lore/index.html#help-wanted">Notes and books</a>.</p>
+    </div>
+  </div>
+  <div class="item" id="tune-in-token">
+    <div class="slot"><img src="{root}assets/img/items/tune-in-token.png" alt="Tune-In Token icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Tune-In Token</p><p class="mc-tip__power">Good for one game at any Tune-In Town arcade cabinet</p><p class="mc-tip__desc">Use it on an arcade cabinet: a prize</p></div>
+      <p><strong>From:</strong> the cast drop them, and they're part of your pay at 6 AM, with emeralds. Put one in any arcade cabinet: its little game, and a prize out of the tray.</p>
+    </div>
+  </div>
+  <div class="item" id="employee-badge">
+    <div class="slot"><img src="{root}assets/img/items/employee-badge.png" alt="Employee Badge icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Employee Badge</p><p class="mc-tip__power">Tune-In Town - Night Security - Five Nights Served</p><p class="mc-tip__desc">Somebody&#x27;s name was scratched off it before yours</p></div>
+      <p>Your pay for the fifth night.</p>
+    </div>
+  </div>
+  <div class="item" id="showtape">
+    <div class="slot"><img src="{root}assets/img/items/music-disc-tune-in-town.png" alt="Music Disc icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Music Disc</p><p class="mc-tip__desc">Tune-In Town - The Showtape (Saturday&#x27;s)</p></div>
+      <p>The showtape: your pay for the sixth night. The show's own song, 1:36, till the tape runs slow and something else is on it.</p>
+    </div>
+  </div>
+  <div class="item" id="security-card">
+    <div class="slot"><img src="{root}assets/img/items/security-card.png" alt="Security Card icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Security Card</p><p class="mc-tip__power">After hours, the cast take no notice of you; red eyes show through the dark</p><p class="mc-tip__desc">Use: to Studio B from anywhere (and back). Doesn&#x27;t</p><p class="mc-tip__desc">fool the Mended Band</p></div>
+      <p>For the fifth night (THE SECRET beaten), since 1.65.4. After hours the cast take no notice of you at all: they don't wake, don't come, don't go for you, and you can walk right up to them on the stage. Swipe it (use it) to go to Studio B from anywhere, and in Studio B, back where you came from. In the dark, anything hostile near you shows its eyes red, even through a wall. On the clock it's no use: on a shift, they come.</p>
+    </div>
+  </div>
+  <div class="item" id="security-flashlight">
+    <div class="slot"><img src="{root}assets/img/items/security-flashlight.png" alt="Security Flashlight icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Security Flashlight</p><p class="mc-tip__power">Held: a long hard beam - what it catches full in the face flinches</p><p class="mc-tip__desc">Tune-In Town Night Security. Property of. Do not</p><p class="mc-tip__desc">remove</p></div>
+      <p>For the fifth night. A long, hard beam: it lights where it ends, and whatever it catches full in the face (near enough) is stopped dead a moment, once every few seconds.</p>
+    </div>
+  </div>
+  <div class="item" id="night-guards-uniform">
+    <div class="slot"><img src="{root}assets/img/items/night-guard-cap.png" alt="Night Guard&#x27;s Cap icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Night Guard&#x27;s Cap</p><p class="mc-tip__power">Night Guard&#x27;s uniform (cap and jacket)</p><p class="mc-tip__desc">Both on: slowness, darkness, blindness and nausea</p><p class="mc-tip__desc">only last a moment</p></div>
+      <p>The <strong>Night Guard's Cap</strong> and <strong>Night Guard's Jacket</strong>, for the sixth night. Both on, off the clock, what the dark's things do to you (slow you, darken or blind you, turn your stomach) only lasts a moment. About leather's worth: the cap 2 armour, the jacket 4.</p>
+    </div>
+  </div>
+</div>
+<h3 id="plushes">Plushes</h3>
+<p>Since 1.65.4 beating a night pays a plush, and so does each Custom Night you beat (anyone who'd beaten nights before then gets what they're owed the next time they're in Studio B). Put them on a shelf; give one a squeeze.</p>
+<div class="tablewrap">
+<table class="data">
+  <thead><tr><th scope="col">Plush</th><th scope="col">Paid for</th></tr></thead>
+  <tbody>
+    <tr><th scope="row"><img class="pixel icon" src="{root}assets/img/items/plush-tony-tune.png" alt="" width="32" height="32"> Tony Tune Plush</th><td>The first night</td></tr>
+    <tr><th scope="row"><img class="pixel icon" src="{root}assets/img/items/plush-bucky-beaver.png" alt="" width="32" height="32"> Bucky Beaver Plush</th><td>The second night</td></tr>
+    <tr><th scope="row"><img class="pixel icon" src="{root}assets/img/items/plush-lulu-lark.png" alt="" width="32" height="32"> Lulu Lark Plush</th><td>The third night</td></tr>
+    <tr><th scope="row"><img class="pixel icon" src="{root}assets/img/items/plush-tempo-tortoise.png" alt="" width="32" height="32"> Tempo the Tortoise Plush</th><td>The fourth night</td></tr>
+    <tr><th scope="row"><img class="pixel icon" src="{root}assets/img/items/plush-rusty-rover.png" alt="" width="32" height="32"> Rusty Rover Plush</th><td>The fifth night</td></tr>
+    <tr><th scope="row"><img class="pixel icon" src="{root}assets/img/items/plush-mister-channel.png" alt="" width="32" height="32"> Mister Channel Plush</th><td>Your first Custom Night won</td></tr>
+    <tr><th scope="row"><img class="pixel icon" src="{root}assets/img/items/plush-jack-jangle.png" alt="" width="32" height="32"> Jack Jangle Plush</th><td>Your second Custom Night won</td></tr>
+    <tr><th scope="row"><img class="pixel icon" src="{root}assets/img/items/plush-spare-parts.png" alt="" width="32" height="32"> Spare Parts Plush</th><td>Your third Custom Night won</td></tr>
+    <tr><th scope="row"><img class="pixel icon" src="{root}assets/img/items/plush-chef-pete.png" alt="" width="32" height="32"> Chef Pete Plush</th><td>Your fourth Custom Night won</td></tr>
+    <tr><th scope="row"><img class="pixel icon" src="{root}assets/img/items/plush-employee-of-the-month.png" alt="" width="32" height="32"> Employee of the Month Plush</th><td>Your fifth Custom Night won</td></tr>
+    <tr><th scope="row"><img class="pixel icon" src="{root}assets/img/items/plush-tix.png" alt="" width="32" height="32"> Tix Plush</th><td>Your sixth Custom Night won</td></tr>
+    <tr><th scope="row"><img class="pixel icon" src="{root}assets/img/items/plush-the-encore.png" alt="" width="32" height="32"> The Encore Plush</th><td>The sixth night</td></tr>
+    <tr><th scope="row"><img class="pixel icon" src="{root}assets/img/items/plush-golden-tony.png" alt="" width="32" height="32"> Golden Tony Plush</th><td>A Custom Night won with every one of them on 20</td></tr>
+  </tbody>
+</table>
+</div>
+<h3 id="the-owner">All three stars</h3>
+<p>Three gold stars on the time clock (the fifth night, the sixth, and a Custom Night with every one of them on 20) and the place is yours (since 1.65.5):</p>
+<div class="items">
+  <div class="item" id="showstopper">
+    <div class="slot"><img src="{root}assets/img/items/showstopper.png" alt="The Showstopper icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">The Showstopper</p><p class="mc-tip__power">Its blow knocks things flying. Use: the spotlight - everything hostile near shows through the walls</p><p class="mc-tip__desc">Tony Tune&#x27;s own cane-microphone. Ladies and</p><p class="mc-tip__desc">gentlemen...</p></div>
+      <p>Tony Tune's cane-microphone, held as he holds it. Its blow lands like a rimshot and knocks what it hits flying. Use it: THE SPOTLIGHT ("Ladies and gentlemen..."), everything hostile within two dozen blocks lit up through the walls for a few seconds, every 15. 8.5 damage, 1.4 attack speed; it never wears out.</p>
+    </div>
+  </div>
+  <div class="item" id="owners-key">
+    <div class="slot"><img src="{root}assets/img/items/owners-key.png" alt="The Owner&#x27;s Key icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">The Owner&#x27;s Key</p><p class="mc-tip__power">On you: Studio B&#x27;s lights up, the cast wave hello, the Mended Band leaves you be</p><p class="mc-tip__desc">Use: to Studio B (in it: where you wake up). On the</p><p class="mc-tip__desc">time clock: bring a friend in</p></div>
+      <p>With it on you, in Studio B the lights are up for you (off the clock), the cast turn, wave and say hello ("Hi, boss!"), and the Mended Band never comes for you. Use it anywhere else: into Studio B. Use it in Studio B: that's where you wake up now (again: not any more). Use it on the time clock: everyone online who isn't there, by name; click one and they're asked in.</p>
+    </div>
+  </div>
+  <div class="item" id="golden-tony-box">
+    <div class="slot"><img src="{root}assets/img/items/golden-tony-box.png" alt="Golden Tony&#x27;s Music Box icon" width="64" height="64"></div>
+    <div class="item__body">
+      <div class="mc-tip"><p class="mc-tip__name">Golden Tony&#x27;s Music Box</p><p class="mc-tip__power">Wind it: out pops Golden Tony, to follow you everywhere (wind it again: back in)</p><p class="mc-tip__desc">He hums the show&#x27;s song. He squeaks when something&#x27;s</p><p class="mc-tip__desc">about. Right-click him: stay / follow</p></div>
+      <p>Wind it and out pops Golden Tony, a little gold Tony Tune of your own. He follows you everywhere (left behind, in another world, after you've logged off, he's beside you again), and when something hostile comes near he squeaks and points his cane at it. Nothing hurts him.</p>
+    </div>
+  </div>
+</div>
+<p>Its blocks: <strong>Checker Tile</strong>, the <strong>Stage Curtain</strong> and <strong>Stage Lights</strong>, <strong>Marquee Lights</strong>, the <strong>Tune-In Town Sign</strong>, <strong>Security Shutters</strong>, <strong>Door Buttons</strong> and <strong>Light Buttons</strong>, <strong>Hall Lights</strong>, the <strong>Security Monitor</strong>, the <strong>Time Clock</strong>, the <strong>Office TV</strong>, the <strong>Music Box</strong>, <strong>Arcade Cabinets</strong>, eight <strong>Party Posters</strong>, <strong>Gift Boxes</strong>, the <strong>Ball Pit</strong> and the <strong>STAFF ONLY Door</strong>; and since 1.71.1 its furniture: <strong>Party Tables</strong>, <strong>Diner Chairs</strong> and <strong>Diner Booths</strong>, <strong>Pizza</strong>, <strong>Soda Cups</strong>, <strong>Balloons</strong>, <strong>Soft-Play Padding</strong> and <strong>Netting</strong>, the <strong>Pizza Oven</strong>, the <strong>Menu Board</strong>, <strong>Party Bunting</strong> and the <strong>Gumball Machine</strong>.</p>
+<div class="items">
+  <div class="item"><div class="slot"><img src="{root}assets/img/items/arcade-cabinet.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Arcade Cabinet</p></div><p>Put a Tune-In Token in it.</p></div></div>
+  <div class="item"><div class="slot"><img src="{root}assets/img/items/staff-door.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">STAFF ONLY Door</p></div><p>At the back of the old place, by the stage: the way into Studio B.</p></div></div>
+</div>
+<div class="todo"><p><strong>TODO</strong> In 1.72.2 these tooltips show only their first grey line in game, because ModRegistry's LORE_LINES has no line count for them: the Blackout Ingot, the Blackout Blade, the Security Card, the Security Flashlight, the Night Guard's cap and jacket, the Showstopper, the Owner's Key and Golden Tony's Music Box. This page shows every line the lang file has for them. Add them to LORE_LINES (2 each) and the game will match.</p></div>
 
 <h2 id="out-in-the-world">Out in the world</h2>
 <p>Things that aren't tied to a chapter. The thirst and the cold they belong to are on <a href="{root}survival.html">Cold, thirst and the world</a>.</p>
@@ -482,6 +995,42 @@ desc: Static Hollow's items and blocks: the Relay Core, compasses and the Watche
   <div class="item"><div class="slot"><img src="{root}assets/img/items/block-bonewood-log.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Bonewood Log</p></div><p>Pale and cold.</p></div></div>
   <div class="item"><div class="slot"><img src="{root}assets/img/items/block-static-stone.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Static Stone</p></div><p>It hums. Fallen stars line their craters with it.</p></div></div>
 </div>
+<h3 id="more-of-the-land">More of the land</h3>
+<p>1.66.0 to 1.66.3 gave the Hollow's country twenty-three more places of its own: nine over and under the ground, seven more, four in the Nether and three in the End (see <a href="{root}places/the-hollows-country.html">the Hollow's own country</a>). Their blocks, in brief:</p>
+<ul>
+  <li><strong>Woods:</strong> <strong>Hangwood</strong>, <strong>Yew</strong>, <strong>Nightspruce</strong> (and <strong>Marked Nightspruce</strong>, eyes cut into it), <strong>Drowned Mangrove</strong> and <strong>Rotblossom</strong> logs, leaves (the Nightspruce's are Nightspruce Needles) and saplings; <strong>Driftwood</strong>.</li>
+  <li><strong>Over the ground:</strong> Nooses, Straw Effigies, Bone Chimes, Ghostfern, Bleached Bush, Finger Cactus, Rust Thorn, Mast Lamps, Throttle Vine, Choke Vine, Meat Flowers, Haunted Ice, Frozen Figures, Rime Stalks, Cliff Faces, Watching Stones, Blighted Wheat, Withered Sunflowers, Scarecrow Heads, Mourning Lilies, Black Roses, Funeral Bells, Headstones, Gloomcaps, Dead Lanterns, Root Hands, Bloated Lilies, Rot Petals, Flesh Blossoms, Pale Mycelium with Pale Cap Blocks, Pale Stems and Pale Caps, Puffballs, Ash Sand, Ash Grass and Rotting Blubber.</li>
+  <li><strong>Under it:</strong> Throat Flesh, Sinew Strands, Gut Pods and Throat Fangs; Echo Stone and Echo Crystals; Web Mass, Silk Cocoons and Egg Sacs.</li>
+  <li><strong>The Nether:</strong> Cinder, Charstone and Ember Charstone, Charred Figures, Ash Reeds, Smoulder Bush; Scab, Bleeding Netherrack, Vein Roots, Bloodcaps, Artery Vines, Heart Muscle and its Heart; Slag, Clinker, Static Vents, Furnace Grates, Cable, Wire Tufts, Spark Bulbs; Grave Nylium, Gallowwood and Gallowwood Sprouts, Rope Grass, Gallows Blooms and Gibbets.</li>
+  <li><strong>The End:</strong> Pale End Stone, Pale Chorus, Pale Blooms, Pale Moss, Pale Watchers; Husk, Husk Flakes, Carapace, Void Eggs, Flaked End Stone; Starless Stone, Dead Stars, Void Cracks and Star Ash.</li>
+</ul>
+<div class="items">
+  <div class="item"><div class="slot"><img src="{root}assets/img/items/block-hangwood-log.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Hangwood Log</p></div><p>The Hanging Wood's. Makes pale oak planks.</p></div></div>
+  <div class="item"><div class="slot"><img src="{root}assets/img/items/block-yew-log.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Yew Log</p></div><p>The Mourning Garden's. Makes dark oak planks.</p></div></div>
+  <div class="item"><div class="slot"><img src="{root}assets/img/items/block-nightspruce-log.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Nightspruce Log</p></div><p>The Tall Dark's. Makes spruce planks.</p></div></div>
+  <div class="item"><div class="slot"><img src="{root}assets/img/items/block-drowned-mangrove-log.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Drowned Mangrove Log</p></div><p>The Drowned Roots'. Makes mangrove planks.</p></div></div>
+  <div class="item"><div class="slot"><img src="{root}assets/img/items/block-rotblossom-log.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Rotblossom Log</p></div><p>Petal Rot's. Makes cherry planks.</p></div></div>
+  <div class="item"><div class="slot"><img src="{root}assets/img/items/block-gallowwood-stem.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Gallowwood</p></div><p>The Gallows Grove's. Makes crimson planks.</p></div></div>
+  <div class="item"><div class="slot"><img src="{root}assets/img/items/block-pale-end-stone.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Pale End Stone</p></div><p>The Pale Reaches' ground.</p></div></div>
+  <div class="item"><div class="slot"><img src="{root}assets/img/items/block-starless-stone.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Starless Stone</p></div><p>The Starless Barrens' ground. Smelts to end stone.</p></div></div>
+</div>
+<div class="tablewrap">
+<table class="data">
+  <thead><tr><th scope="col">Made from</th><th scope="col">What it makes</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">A Hangwood, Yew, Nightspruce, Drowned Mangrove or Rotblossom log; Gallowwood; Driftwood</th><td>Four planks: pale oak, dark oak, spruce, mangrove, cherry, crimson, birch</td></tr>
+    <tr><th scope="row">Black Rose; Bloodcap; Gallows Bloom; Mourning Lily or Pale Bloom</th><td>Black, red, light grey or white dye</td></tr>
+    <tr><th scope="row">Ash Sand (smelted)</th><td>Tinted glass</td></tr>
+    <tr><th scope="row">Charred Figure (smelted)</th><td>Four charcoal</td></tr>
+    <tr><th scope="row">Starless Stone (smelted)</th><td>End stone</td></tr>
+    <tr><th scope="row">Cable</th><td>An iron chain</td></tr>
+    <tr><th scope="row">Three Rope Grass; Web Mass</th><td>A string; three string</td></tr>
+    <tr><th scope="row">Three Husk</th><td>Three paper</td></tr>
+    <tr><th scope="row">Carapace</th><td>Two bone meal</td></tr>
+    <tr><th scope="row">Four Star Ash</th><td>Glowstone dust</td></tr>
+  </tbody>
+</table>
+</div>
 
 <h2 id="survival">Survival and story items</h2>
 <div class="tablewrap">
@@ -513,7 +1062,7 @@ desc: Static Hollow's items and blocks: the Relay Core, compasses and the Watche
 </div>
 
 <h2 id="weapons">Weapons</h2>
-<p>Big, detailed 3D weapons, held like a sword. A fully charged swing (wait for the attack meter) triggers the weapon's power; the second act's weapons also have a power on use, with a ten-second cooldown. The first four weapons and every armour piece are unbreakable, and those four can break blocks slowly, like a sword. Since 1.61.0 every weapon swings its own way, and since 1.61.1 the Rending Claws, Brute Knuckles and Stalker Claws are worn on the hand (see <a href="{root}items/chapter-gear.html#the-gloves">the gloves</a>). The fourteen chapter weapons added in 1.60.0 are on <a href="{root}items/chapter-gear.html#weapons">Gear for every chapter</a>.</p>
+<p>Big, detailed 3D weapons, held like a sword. A fully charged swing (wait for the attack meter) triggers the weapon's power; the second act's weapons also have a power on use, with a ten-second cooldown. The first four weapons and every armour piece are unbreakable, and those four can break blocks slowly, like a sword. Since 1.61.0 every weapon swings its own way, and since 1.61.1 the Rending Claws, Brute Knuckles and Stalker Claws are worn on the hand (see <a href="{root}items/chapter-gear.html#the-gloves">the gloves</a>). The fourteen chapter weapons added in 1.60.0 are on <a href="{root}items/chapter-gear.html#weapons">Gear for every chapter</a>, with the Blackout Blade. The <a href="#gillmaw-spear">Gillmaw-Tooth Spear</a>, <a href="#faithful-dagger">the Faithful's Dagger</a> and <a href="#showstopper">the Showstopper</a> are with their chapters above.</p>
 <div class="tablewrap">
 <table class="data">
   <thead><tr><th scope="col">Weapon</th><th scope="col">Power</th><th scope="col">What it does</th><th scope="col">Recipe (rows, top to bottom)</th></tr></thead>
@@ -547,7 +1096,7 @@ desc: Static Hollow's items and blocks: the Relay Core, compasses and the Watche
 <p>Fabric only, with Timeless and Classics Guns: Zero (TaCZ), which the Fabric modpack installs. Three guns the Flesh grew into the special forces who carried them: the <strong>Mended SMG</strong> (its stock a forearm, an eye open in its side, a muzzle of five flesh petals; 30 rounds, full auto), the <strong>Mended Shotgun</strong> (a ribcage stock, a seed-pod magazine of 6 shells, a muzzle of teeth that chews when you look at it) and the <strong>Mended Marksman Rifle</strong> (a spine along the barrel, a thighbone stock, a finger for a bolt handle; 5 rounds). They fire infected rounds that put the Flesh into whatever they hit. Made at TaCZ's Gun Smith Table; special forces sometimes drop theirs. Once the Bloom is dead, they rot and jam over ten minutes off its blight.</p>
 
 <h2 id="armour">Armour</h2>
-<p>Every set is a real 3D model that moves. Crafted in the usual armour shapes from a material M with one accent X. The seven chapter sets (the Vigil, the Scarecrow, the Bloomwoven, the Specimen, Dead Air, the Usher's Uniform and On Air) are on <a href="{root}items/chapter-gear.html#armour">Gear for every chapter</a>. Since 1.60.0 any creature head can be worn too (<a href="{root}items/chapter-gear.html#heads">heads, worn</a>).</p>
+<p>Every set is a real 3D model that moves. Crafted in the usual armour shapes from a material M with one accent X. The seven chapter sets (the Vigil, the Scarecrow, the Bloomwoven, the Specimen, Dead Air, the Usher's Uniform and On Air) are on <a href="{root}items/chapter-gear.html#armour">Gear for every chapter</a>. Since 1.60.0 any creature head can be worn too (<a href="{root}items/chapter-gear.html#heads">heads, worn</a>). The Dead Water's two dive suits and Blackout are on that page too, and the <a href="#night-guards-uniform">Night Guard's uniform</a> is with Tune-In Town's prizes.</p>
 <div class="tablewrap">
 <table class="data">
   <thead><tr><th scope="col">Set</th><th scope="col">Full-set power</th><th scope="col">Made from</th></tr></thead>
@@ -599,7 +1148,7 @@ desc: Static Hollow's items and blocks: the Relay Core, compasses and the Watche
   <div class="item"><div class="slot"><img src="{root}assets/img/items/block-null-static.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Null Static</p></div><p>What the drive-in's ground has gone to (as the mod's source describes it).</p></div></div>
   <div class="item"><div class="slot"><img src="{root}assets/img/items/block-hush-stone.png" alt="" width="64" height="64"></div><div class="item__body"><div class="mc-tip"><p class="mc-tip__name">Hush Stone</p></div><p>Pale and dead: knock on it and nothing rings.</p></div></div>
 </div>
-<p>The blocks of the hive, the Deep, the Stalls, the Vault, the Other Side, the Hub and the Dead Water are listed with their chapters above.</p>
+<p>The blocks of the hive, the Deep, the Stalls, the Vault, the Other Side, the Hub, the Dead Water, his kingdom and Tune-In Town are listed with their chapters above, and the new land's under <a href="#more-of-the-land">More of the land</a>.</p>
 <h3 id="building-blocks">Building blocks</h3>
 <p>Hollow stone, hollow stone bricks (plain, cracked and bloodied), hollow brick stairs, slabs and walls, hollow tiles, hollow pillars, ossuary bricks, rotten planks (with Rotten Pews and slabs), cathedral glass (with its god rays), grave soil, gravestones, grave crosses and blood splatters. Breach stone and bricks, breach crystal and shards. Weathered clapboard, damask wallpaper, stained floorboards, slate shingles, grimy windows. Conservatory glass, overgrown iron, marble, planters, potting soil, garden flagstones and iron lattice. Shelter concrete, laboratory tiles and panels, steel grating, sandbags and wrecked cars. The radio mast, its top, antennas, aviation lights and guy-wire anchors (an anchor wires itself to the nearest mast). Blood is a real liquid: a bucket scoops it up.</p>
 <p>The garden's plants: Bloodthorn, Gnashing Flytrap, Whispering Lily, Corpse Bloom, Ghost Orchid, Watching Fern, Strangler Vine, Lantern Pod, Burstpod, Clutchvine, Weeping Bell, and four kinds of Specimen Jar (eye, heart, hand, seed).</p>
