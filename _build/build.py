@@ -113,7 +113,8 @@ NAV = [
         ("places/the-hollows-country.html", "The Hollow's own country", None),
     ]),
     ("Items & blocks", [
-        ("items/index.html", "Every item and block", None),
+        ("items/index.html", "Items and blocks", None),
+        ("items/a-to-z.html", "Every item and block, A to Z", None),
         ("items/chapter-gear.html", "Gear for every chapter", None),
         ("items/index.html#relay-core", "Relay Core", None),
         ("items/index.html#compasses", "Compasses and needles", None),
