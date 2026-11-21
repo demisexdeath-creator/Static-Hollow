@@ -37,7 +37,7 @@ BASE_PATH = "/Static-Hollow/"
 # The site's public address: used for search engines (canonical links and sitemap.xml).
 SITE_URL = "https://demisexdeath-creator.github.io/Static-Hollow/"
 HOME_TITLE = "Static Hollow | Official Website"
-VERSION = "1.72.3"
+VERSION = "1.77.5"
 
 CHAPTERS = {
     1: ("story/chapter-1.html", "The Nine"),
@@ -87,6 +87,8 @@ NAV = [
         ("entities/the-harbinger.html", "The Harbinger", 9),
         ("entities/his-creations.html", "His creations and servants", 10),
         ("entities/tune-in-town-cast.html", "Tune-In Town's cast", 10),
+        ("entities/starlight-annex-cast.html", "The Starlight Annex's cast", 10),
+        ("entities/realm-3190.html", "Realm 3190's creatures", 10),
     ]),
     ("Locations & structures", [
         ("places/index.html", "Every location", None),
@@ -105,6 +107,9 @@ NAV = [
         ("places/the-dead-water.html", "The Dead Water", 8),
         ("places/his-kingdom.html", "His kingdom", 10),
         ("places/tune-in-town.html", "Tune-In Town", 10),
+        ("places/the-starlight-annex.html", "The Starlight Annex", 10),
+        ("places/realm-3190.html", "Realm 3190", 10),
+        ("places/the-midnight-fair.html", "Crane's Midnight Fair", 10),
         ("places/the-hollows-country.html", "The Hollow's own country", None),
     ]),
     ("Items & blocks", [
@@ -125,6 +130,8 @@ NAV = [
         ("advancements.html", "Advancements", None),
         ("music.html", "The soundtrack", None),
         ("survival.html", "Cold, thirst and the world", None),
+        ("doomsday.html", "The Doomsday programmes", None),
+        ("after-dark.html", "After dark", None),
         ("credits.html", "Credits", None),
         ("todo.html", "Unverified entries (TODO)", None),
     ]),

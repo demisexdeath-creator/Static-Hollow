@@ -3,7 +3,7 @@
 The official website and wiki for **Static Hollow**, the creepypasta horror mod for Minecraft 26.3 by Death.
 Plain HTML, CSS and a little JavaScript. No server, no build step needed to view or host it.
 
-Written against mod version **1.63.3** (Fabric and Forge), from the mod's own README, language
+Written against mod version **1.77.5** (Fabric; Forge where it plays the same), from the mod's own README, language
 file and source code.
 
 ## Look at it

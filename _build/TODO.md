@@ -1,6 +1,6 @@
 # Static Hollow website: open TODOs
 
-72 notes across 45 pages. They're hidden on the public site. Build with `--drafts` to see them on the pages.
+71 notes across 44 pages. They're hidden on the public site. Build with `--drafts` to see them on the pages.
 To close one, open the page's source in `src/`, search for `TODO`, replace the box with the real text, and build again.
 
 ## Advancements (`src/advancements.html`)
@@ -51,9 +51,6 @@ To close one, open the page's source in `src/`, search for `TODO`, replace the b
 
 ## Home (`src/index.html`)
 - **The Last Broadcast**: Chapters five to ten are named in the mod's files ("Chapter Five - The Static", "Chapter Six: The Door at the End of the World", "Chapter Seven: The First Signal", "Chapter Eight - The Dead Water", "Chapter Nine: The Harbinger", "Chapter Ten: Stay Tuned"). The names and boundaries of chapters one to four on this wiki come from the mod's acts and phases. Rename them here and in the sidebar if they have official names.
-
-## Installation guide (`src/install.html`)
-- **The Static Hollow - Dead Channel modpack**: Say whether leaving Water Erosion and Cinematic Interactions out of Dead Channel is on purpose (the pack's own builds of them aren't CurseForge projects), or whether they'll be added. Check too whether Dead Channel has FerriteCore, ImmediatelyFast and Max Companion, which the Fabric modpack carries in its own mods folder since 1.63.20 and 1.63.22.
 
 ## Gear for every chapter (`src/items/chapter-gear.html`)
 - **The weapons**: In 1.72.2 the Blackout Blade's tooltip shows only its first grey line in game (ModRegistry's LORE_LINES has no line count for weapon.statichollow.blackout_blade.desc). The table shows both.

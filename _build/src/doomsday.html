@@ -1,0 +1,74 @@
+<!--
+title: The Doomsday Programmes
+nav: The Doomsday programmes
+sub: THIS STATION IS NOW CLOSING DOWN.
+section: misc
+desc: Static Hollow's Doomsday programmes (1.73.0): White Noise, The Rip and Closedown, the world events that really change the land; when they come, the Watcher's Field, the limits and the config file, the sirens and alerts, and the Doomsday weapons: the Picture Tube, the Feedback Horn and the Emergency Transmitter.
+-->
+<p class="lede">Since 1.73.0 the end of the world comes as a broadcast. Three world events, each one really done to the land, each coming on with its own cutscene: the picture breaks up, WE INTERRUPT THIS PROGRAMME, a bulletin crawls along the bottom of the picture, and the camera is sent out over your own land to watch it come.</p>
+
+<h2 id="the-programmes">The three programmes</h2>
+<h3 id="white-noise">White Noise</h3>
+<p>The signal dies and takes the sky with it. A storm of black static rolls in over everyone, churning, hanging down out of itself in curtains, the light flickering in it, and for three minutes its lightning comes down. Each bolt's leader feels its way down first, the ground under it lighting up (get out from under it), then the strike: white-hot, forking, striking again and again. Every bolt fuses the ground into a branching scar of <strong>Dead Glass</strong> with <strong>Signal Slag</strong> in it, and throws whatever's near. Civil-defence sirens go up out over the land, three of them on their poles near, further and far, never in time with each other; when it clears, the all clear.</p>
+<h3 id="the-rip">The Rip</h3>
+<p>The picture tears. A white-hot hairline high in the sky splits open, black, its edges blazing and crackling, and reaches down to the ground, then drags along it for a minute, fifty-odd blocks from you, tearing a chasm through the land (its walls his static), flinging the ground up into itself and dragging in whatever's near. His kingdom's things climb out of it, until the story's done with him. Distress calls come out of it on a shortwave band: SOS in Morse, the two-tone radiotelephone alarm, an emergency beacon's whoop. Then it seals, up into the sky.</p>
+<h3 id="closedown">Closedown</h3>
+<p>"THIS STATION IS NOW CLOSING DOWN." The test card and its tone, the alert, then far off on the horizon a white point, pulsing, its beam up into the sky. Thirty seconds (a countdown over the picture, its pips getting faster) with the wavering attack warning on every siren. Then it goes off: the flash (blinding, if you're looking at it), the power gone and every siren dead at once, a dome of white static over ground zero, and the shockwave coming across the land at you, its wall of dust, the ring of cloud over it, its boom arriving with it. It strips the trees and breaks the glass it passes, and throws whatever it catches out in the open (behind something solid, you only feel it). Its column rises and its cap rolls over. At ground zero, a great crater, glassed. Afterwards, the all clear.</p>
+
+<h2 id="when">When they come</h2>
+<div class="tablewrap">
+<table class="data">
+  <thead><tr><th scope="col">Programme</th><th scope="col">In the story</th></tr></thead>
+  <tbody>
+    <tr><td>White Noise</td><td>The fifth night of <a href="{root}story/chapter-10.html">chapter ten</a></td></tr>
+    <tr><td>The Rip</td><td>The day after the Refusal</td></tr>
+    <tr><td>Closedown</td><td>Two days after <a href="{root}story/the-last-broadcast.html">the Last Broadcast</a></td></tr>
+  </tbody>
+</table>
+</div>
+<p>Each comes once in the story. After that they come by themselves now and then: no more than one a week, a 15% chance a day, and only ones you've already had. Every broadcast opens with the Emergency Alert System: three data bursts (a real alert header, which a decoder would read), then the two-tone attention signal, and its end-of-message bursts when it's over.</p>
+<p><code>/statichollow doomsday start &lt;white_noise|rip|closedown&gt; [player]</code>, <code>stop</code> and <code>status</code>.</p>
+
+<h2 id="the-watchers-field">The Watcher's Field</h2>
+<p>While one of them is on, the Watcher puts his field up over every home: the world's spawn and everyone's bed or respawn point. It's a dome of his light, a lattice of it, 48 blocks round. Nothing the programmes do can break the ground under it or hurt anyone in it: White Noise's bolts come down on the dome and go off it in a ripple of light, the Rip drags nothing out from under it, and Closedown's wave breaks over it. Get inside.</p>
+<h3 id="the-limits">The limits</h3>
+<ul>
+  <li>Never under the Watcher's Field.</li>
+  <li>Never where TNT couldn't break the ground (the gamerule).</li>
+  <li>Never in his realms.</li>
+  <li>Nothing with anything kept in it (chests and the like), and no bedrock, is ever touched.</li>
+  <li>Everyone in an opening cutscene is kept from harm while it plays.</li>
+</ul>
+<p><code>config/statichollow-doomsday.properties</code>:</p>
+<div class="tablewrap">
+<table class="data">
+  <thead><tr><th scope="col">Setting</th><th scope="col">What it does</th></tr></thead>
+  <tbody>
+    <tr><td><code>ground_damage</code></td><td>true or false: whether they change the land at all</td></tr>
+    <tr><td><code>safe_radius</code></td><td>The Watcher's Field's size</td></tr>
+    <tr><td><code>size</code></td><td>How big the damage is, 0.25 to 1.5</td></tr>
+    <tr><td><code>by_themselves</code></td><td>true or false: whether they come by themselves after the story</td></tr>
+    <tr><td><code>days_between</code>, <code>chance</code></td><td>How often</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="the-doomsday-weapons">The Doomsday weapons</h2>
+<p>Made from <strong>Slag Shards</strong> (mine Signal Slag; Silk Touch keeps it whole). They're your own doing: the Watcher's Field doesn't stop them, only the TNT gamerule does.</p>
+<div class="tablewrap">
+<table class="data">
+  <thead><tr><th scope="col">Weapon</th><th scope="col">Made from</th><th scope="col">What it does</th></tr></thead>
+  <tbody>
+    <tr><td><strong>The Picture Tube</strong> (thrown; you get two)</td><td>Copper wire, slag shards, a vacuum tube, tinted glass</td><td>Where it lands its picture shrinks to a line, a point, its rings closing in. It pulls everything round it in for a second and a half, and implodes: a ball of the world gone, a shell of Dead Glass left.</td></tr>
+    <tr><td><strong>The Feedback Horn</strong> (held up)</td><td>Blackout ingots, a vacuum tube, a heat coil, slag shards, copper wire</td><td>A beam of feedback, its rings of sound going out along it. What's in it is shaken apart and driven back, and the ground at its end bored away. Five seconds and its fins glow red-hot and it cuts out, shrieking.</td></tr>
+    <tr><td><strong>The Emergency Transmitter</strong> (set down)</td><td>A blackout ingot, a relay core, signal fragments, slag shards, copper wire</td><td>Its mast goes up, it keys SOS, its alarm and rings go out, and White Noise comes down round it on whatever hostile thing's near (never on you), the biggest bolt last, on the set itself. A minute before it can broadcast again.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="new-blocks">New blocks</h2>
+<ul>
+  <li><strong>Dead Glass:</strong> the ground a bolt fused. Smoky, with a lightning figure frosted in it.</li>
+  <li><strong>Signal Slag:</strong> black glass with the signal crawling in its veins, glowing, crackling.</li>
+</ul>
+<p>All of it has its own sounds: the attention signal, the storm, the strikes and their thunder, the Rip's tearing, the closedown tone and the boom, and the weapons'.</p>
